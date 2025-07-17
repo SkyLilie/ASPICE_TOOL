@@ -7,6 +7,11 @@ It leverages the capabilities of Google's Gemini Pro AI model to perform a the a
 
 The script reads the official ASPICE standard, user's project documents, and generates a structured report that identifies compliance levels, highlights gaps, and provides actionable suggestions for improvement.
 
+## Structure of repo
+Aspice_auditor_v0.1.py is the python script
+EXAMPLE_FILES includes the requirements used to generate report
+ASPICE_Report_SYS>@_Level3.md is the generated report
+ASPICE_STANDARDS_SYS.pdf are the ASPICE standards for sys domain
 
 ## WORKING:-
 
