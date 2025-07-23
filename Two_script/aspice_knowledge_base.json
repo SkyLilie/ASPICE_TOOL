@@ -1,0 +1,1591 @@
+{
+    "SYS.1":[
+            {
+                "BP_ID": "SYS.1.BP1",
+                "BP_title": "Obtain stakeholder expectations and requests.",
+                "BP_statement": "Obtain and define stakeholder expectations and requests through direct solicitation of stakeholder input, and through review of stakeholder business proposals (where relevant) and other documents containing inputs to stakeholder requirements, and consideration of the target operating and hardware environment.",
+                "BP_key_obj": "Gather inputs from all relevant sources, Define stakeholder needs and context, Document initial requests and expectations.",
+                "BP_user_docs_needed": "Stakeholder Requirements Specification (StRS), Meeting Minutes with Stakeholders, Business Proposals, Market Analysis Documents, Use Case Descriptions, Interview Records.",
+                "BP_rating_rules": {
+                        "F": [
+                            "A systematic process for identifying and engaging all relevant stakeholders is defined and followed.",
+                            "Evidence of direct communication (e.g., meeting minutes, interview notes) exists and covers all key areas.",
+                            "Stakeholder business proposals and other relevant input documents are systematically reviewed and analyzed.",
+                            "The target operating environment is clearly defined and considered.",
+                            "The source of every stakeholder requirement is documented."
+                        ],
+                        "L": [
+                            "Most key stakeholders are consulted, and their input is gathered.",
+                            "Communication is largely effective, though some records may be informal or slightly incomplete.",
+                            "The process for gathering requirements is generally followed, but may have minor deviations.",
+                            "The resulting requirements provide a good, but not perfect, understanding of stakeholder needs."
+                        ],
+                        "P": [
+                            "Only the primary stakeholder (e.g., the direct customer) is consulted, while others (e.g., end-users, service technicians) are ignored.",
+                            "The gathering of requirements is ad-hoc and reactive.",
+                            "Significant gaps exist in the understanding of the context or stakeholder needs.",
+                            "The source of requirements is often not documented."
+                        ],
+                        "N": [
+                            "No evidence of stakeholder consultation exists.",
+                            "Requirements are assumed or invented by the project team without external input.",
+                            "There are no documented stakeholder requirements."
+                        ]
+                    }
+            },
+            {
+                "BP_ID": "SYS.1.BP2",
+                "BP_title": "Agree on requirements.",
+                "BP_statement": "Formalize the stakeholder\u2019s expectations and requests into requirements. Reach a common understanding of the set of stakeholder requirements among affected parties by obtaining an explicit agreement from all affected parties.",
+                "BP_key_obj": "Formalize requirements, Achieve common understanding, Secure explicit agreement, Establish a baseline.",
+                "BP_user_docs_needed": "Stakeholder Requirements Specification (StRS) with status, Review Records, Approval Records or Sign-offs, Feasibility Study Results, Cost/Schedule Impact Analysis.",
+                "BP_rating_rules": {
+                        "F": [
+                            "All stakeholder requirements are formalized and documented in a specification.",
+                            "There is documented evidence (e.g., review protocol, sign-off sheet) of explicit agreement from all identified affected parties.",
+                            "Feasibility studies and impact analyses have been performed and used as a basis for agreement.",
+                            "A clear, agreed-upon baseline of stakeholder requirements is established."
+                        ],
+                        "L": [
+                            "The vast majority of requirements are formalized and agreed upon with the main stakeholders.",
+                            "Agreement from some secondary affected parties may be implicit or not formally documented.",
+                            "The requirements baseline is mostly stable and understood.",
+                            "Minor ambiguities may exist but do not block progress."
+                        ],
+                        "P": [
+                            "Agreement is only obtained from the project sponsor, not other affected parties.",
+                            "Requirements are documented, but there is no formal review or agreement process.",
+                            "Significant disagreements or misunderstandings about the requirements persist.",
+                            "The requirements are not considered a stable baseline."
+                        ],
+                        "N": [
+                            "No attempt is made to gain agreement on the requirements.",
+                            "There is no formalized Stakeholder Requirements Specification.",
+                            "Work begins based on informal, unverified requests."
+                        ]
+                    }
+            },
+            {
+                "BP_ID": "SYS.1.BP3",
+                "BP_title": "Analyze stakeholder requirements changes.",
+                "BP_statement": "Analyze all changes made to the stakeholder requirements against the agreed stakeholder requirements. Assess the impact and risks, and initiate appropriate change control and mitigation actions.",
+                "BP_key_obj": "Impact Analysis, Risk Assessment, Change Control, Traceability.",
+                "BP_user_docs_needed": "Change Requests, Impact Analysis Report, Risk Assessment Log, Updated Stakeholder Requirements Specification, Change Control Board (CCB) Meeting Minutes.",
+                "BP_rating_rules": {
+                        "F": [
+                            "A defined change management process (see SUP.10) is consistently followed for every change request.",
+                            "Every change is analyzed for its impact on cost, schedule, and technical aspects.",
+                            "Risks associated with the change are identified, assessed, and mitigation actions are defined.",
+                            "The analysis results are documented and communicated to the relevant decision-makers (e.g., CCB).",
+                            "The status of all change requests is tracked and known."
+                        ],
+                        "L": [
+                            "Most changes are analyzed, but the analysis for minor changes may be informal.",
+                            "Impact and risk assessment is generally performed but might lack depth in some cases.",
+                            "A change control process exists and is mostly followed.",
+                            "The overall impact of changes is understood and managed."
+                        ],
+                        "P": [
+                            "Changes are accepted without a formal analysis of impact or risk.",
+                            "The analysis, if done, is superficial and does not consider all affected areas.",
+                            "There is no formal change control process; changes are implemented as they arrive.",
+                            "This leads to scope creep and project instability."
+                        ],
+                        "N": [
+                            "Changes to requirements are not tracked.",
+                            "The agreed baseline is not maintained.",
+                            "There is no concept of change analysis or control."
+                        ]
+                    }
+            },
+            {
+                "BP_ID": "SYS.1.BP4",
+                "BP_title": "Communicate requirements status.",
+                "BP_statement": "Ensure all affected parties can be aware of the status and disposition of their requirements including changes and can communicate necessary information and data.",
+                "BP_key_obj": "Transparency, Status Tracking, Accessibility, Stakeholder Awareness.",
+                "BP_user_docs_needed": "Communication Plan, Requirements Traceability Matrix with Status, Change Request Log, Project Status Reports, Requirements Management Tool Access/Views.",
+                "BP_rating_rules": {
+                        "F": [
+                            "A mechanism (e.g., a requirements management tool, a shared document) is in place and accessible to all affected parties.",
+                            "The status of every requirement (e.g., proposed, agreed, implemented, verified) is clearly tracked and up-to-date.",
+                            "The disposition of all change requests (accepted, rejected, pending) is communicated to the requesters and other stakeholders.",
+                            "Communication of status is proactive and regular."
+                        ],
+                        "L": [
+                            "Key stakeholders are kept informed about the status of their requirements, primarily through status meetings or reports.",
+                            "The tracking system is mostly up-to-date, but there may be some lag.",
+                            "Not all affected parties may have direct access to the system, but the information is available upon request."
+                        ],
+                        "P": [
+                            "Communication is ad-hoc and only happens when problems arise.",
+                            "The status of requirements is not formally tracked or is significantly out of date.",
+                            "Stakeholders are often unaware of the status or disposition of their requests.",
+                            "Information is difficult to find."
+                        ],
+                        "N": [
+                            "No communication about requirements status occurs.",
+                            "There is no system for tracking the status of requirements.",
+                            "Stakeholders have no visibility into the requirements process after their initial input."
+                        ]
+                    }
+            }
+        ],
+    "SYS.2":[
+            {
+                "BP_ID": "SYS.2.BP1",
+                "BP_title": "Specify system requirements.",
+                "BP_statement": "Use the stakeholder requirements to identify and document the functional and non-functional requirements for the system according to defined characteristics for requirements.",
+                "BP_key_obj": "Elaboration, Translation, Quality, Documentation.",
+                "BP_user_docs_needed": "Stakeholder Requirements Specification (StRS), System Requirements Specification (SyRS), Requirements Management Plan (RMP), Review Records.",
+                "BP_rating_rules": {
+                        "F": [
+                            "All relevant stakeholder requirements are clearly covered by one or more system requirements.",
+                            "Each system requirement is unambiguous, verifiable, consistent, feasible, and complete.",
+                            "Each system requirement is atomic (describes a single piece of functionality).",
+                            "All requirements are explicitly and correctly classified (e.g., Functional, Non-Functional, Safety) according to definitions in the RMP.",
+                            "Review records show that a formal quality check against defined characteristics was performed and issues were resolved."
+                        ],
+                        "L": [
+                            "The vast majority of stakeholder requirements are covered.",
+                            "Most system requirements are of high quality, but there may be minor issues in a small number of them (e.g., a few requirements could be worded more clearly).",
+                            "Most contradictions or issues were identified and resolved during reviews.",
+                            "The overall document is a reliable basis for system design."
+                        ],
+                        "P": [
+                            "There are significant gaps in coverage; numerous stakeholder requirements are not addressed.",
+                            "A significant number of system requirements are ambiguous (using words like 'fast', 'easy'), non-verifiable, or inconsistent.",
+                            "The classification of requirements is often missing or incorrect.",
+                            "The document requires significant rework to be a reliable basis for design."
+                        ],
+                        "N": [
+                            "No System Requirements Specification (SyRS) exists.",
+                            "The SyRS is just a copy-paste of the Stakeholder Requirements without any engineering analysis or refinement.",
+                            "The SyRS is so poor it provides no value."
+                        ]
+                    }
+            },
+            {
+                "BP_ID": "SYS.2.BP2",
+                "BP_title": "Structure system requirements.",
+                "BP_statement": "Structure and prioritize the system requirements.",
+                "BP_key_obj": "Organization, Prioritization, Grouping, Clarity.",
+                "BP_user_docs_needed": "System Requirements Specification (SyRS) with structure and priorities, Product Release Plan, Requirements Management Tool Configuration.",
+                "BP_rating_rules": {
+                        "F": [
+                            "A clear and logical structure for system requirements is defined and consistently applied.",
+                            "Requirements are grouped by relevant criteria (e.g., by feature, by product variant, by domain).",
+                            "All requirements have a defined priority based on an agreed-upon scheme (e.g., MoSCoW, numerical).",
+                            "Prioritization is linked to project needs and release planning."
+                        ],
+                        "L": [
+                            "Requirements are structured, but the structure may have some minor inconsistencies.",
+                            "Most requirements are prioritized, though the rationale for some priorities may not be explicitly documented.",
+                            "The document is generally easy to navigate and understand."
+                        ],
+                        "P": [
+                            "Requirements are listed in a flat, unstructured list.",
+                            "No prioritization is applied, or it is applied inconsistently.",
+                            "It is difficult to find related requirements or understand the scope of a release."
+                        ],
+                        "N": [
+                            "There is no attempt to structure or prioritize requirements."
+                        ]
+                    }
+            },
+            {
+                "BP_ID": "SYS.2.BP3",
+                "BP_title": "Analyze system requirements.",
+                "BP_statement": "Analyze the specified system requirements including their interdependencies to ensure correctness, technical feasibility, and to support project management regarding project estimates.",
+                "BP_key_obj": "Feasibility Analysis, Interdependency Analysis, Risk Identification, Estimation Support.",
+                "BP_user_docs_needed": "System Requirements Analysis Report, Feasibility Study, Technical Risk Log, Project Estimation Data, Review Records.",
+                "BP_rating_rules": {
+                        "F": [
+                            "A systematic analysis of all system requirements is performed and documented.",
+                            "Technical feasibility is confirmed for all requirements, potentially using prototypes or simulations.",
+                            "Interdependencies between requirements are identified and documented.",
+                            "The analysis results are used as a reliable input for project planning and estimation (see MAN.3).",
+                            "Potential conflicts and inconsistencies between requirements are identified and resolved."
+                        ],
+                        "L": [
+                            "Analysis is performed for most requirements, especially the high-risk ones.",
+                            "Feasibility is assessed, but might be based on expert opinion rather than formal studies for less critical requirements.",
+                            "Major interdependencies are identified.",
+                            "The analysis provides a reasonable basis for project planning."
+                        ],
+                        "P": [
+                            "Analysis is superficial or only performed for a few requirements.",
+                            "Technical feasibility is assumed, not verified.",
+                            "Significant conflicts between requirements remain undiscovered.",
+                            "Project estimates are made without a solid analytical basis from the requirements."
+                        ],
+                        "N": [
+                            "No analysis of system requirements is performed.",
+                            "The team proceeds to design without knowing if the requirements are feasible or consistent."
+                        ]
+                    }
+            },
+            {
+                "BP_ID": "SYS.2.BP4",
+                "BP_title": "Analyze the impact on the system context.",
+                "BP_statement": "Analyze the impact that the system requirements will have on elements in the relevant system context.",
+                "BP_key_obj": "System Interface Analysis, Operational Impact, Environmental Impact, Lifecycle Impact.",
+                "BP_user_docs_needed": "System Context Diagram, Impact Analysis Report, Interface Control Documents (ICDs).",
+                "BP_rating_rules": {
+                        "F": [
+                            "The system context and all external interfaces are clearly defined.",
+                            "A systematic analysis is conducted to determine the impact of the system requirements on the operational environment (e.g., manufacturing, service, other systems).",
+                            "The results of the impact analysis are documented and used to refine requirements or interface specifications.",
+                            "All affected external parties are consulted regarding the impact."
+                        ],
+                        "L": [
+                            "The impact on the primary external interfaces and operational environment is analyzed.",
+                            "Some secondary impacts (e.g., on decommissioning) may be overlooked.",
+                            "The analysis is sufficient to avoid major integration problems."
+                        ],
+                        "P": [
+                            "Impact analysis is minimal or focuses only on one aspect (e.g., a single electrical interface).",
+                            "The system is designed with little consideration for its operating environment or other systems it must interact with.",
+                            "This leads to integration issues and operational problems late in the project."
+                        ],
+                        "N": [
+                            "No analysis of the impact on the system context is performed."
+                        ]
+                    }
+            },
+            {
+                "BP_ID": "SYS.2.BP5",
+                "BP_title": "Ensure consistency and establish bidirectional traceability.",
+                "BP_statement": "Ensure consistency and establish bidirectional traceability between system requirements and stakeholder requirements.",
+                "BP_key_obj": "Traceability, Consistency, Coverage Analysis, Impact Analysis Enablement.",
+                "BP_user_docs_needed": "Requirements Traceability Matrix, Consistency Analysis Report, Requirements Management Tool Data, Review Records.",
+                "BP_rating_rules": {
+                        "F": [
+                            "Bidirectional traceability is established between every system requirement and its source stakeholder requirement(s).",
+                            "Traceability links are regularly reviewed and maintained.",
+                            "A consistency check is performed to ensure that linked requirements are not in conflict.",
+                            "Coverage analysis is performed to ensure all stakeholder requirements are addressed by system requirements.",
+                            "The traceability is complete and correct."
+                        ],
+                        "L": [
+                            "Traceability is established for the vast majority of requirements.",
+                            "There may be a few missing or incorrect links, but they are minor and easily fixed.",
+                            "Consistency is checked, and major inconsistencies are resolved.",
+                            "Coverage is largely complete."
+                        ],
+                        "P": [
+                            "Traceability is sporadic, with many missing links.",
+                            "Links exist, but their correctness is not verified (i.e., 'linked' does not mean 'consistent').",
+                            "Significant gaps in coverage exist, which are not visible due to poor traceability.",
+                            "Impact analysis of changes is difficult or impossible."
+                        ],
+                        "N": [
+                            "No traceability is established between stakeholder and system requirements."
+                        ]
+                    }
+            },
+            {
+                "BP_ID": "SYS.2.BP6",
+                "BP_title": "Communicate agreed system requirements and impact on the system context.",
+                "BP_statement": "Communicate the agreed system requirements, and results of the impact analysis on the system context, to all affected parties.",
+                "BP_key_obj": "Alignment, Information Sharing, Establishing a Baseline, Stakeholder Notification.",
+                "BP_user_docs_needed": "Communication Plan, System Requirements Specification (baselined), Impact Analysis Report, Meeting Minutes, Release Notes.",
+                "BP_rating_rules": {
+                        "F": [
+                            "A formal communication of the baselined system requirements is made to all affected parties (e.g., design teams, test teams, management).",
+                            "The communication includes the results of the system context impact analysis.",
+                            "A mechanism is in place to ensure all parties are working from the correct version of the requirements.",
+                            "Evidence of communication (e.g., email, meeting record) is kept."
+                        ],
+                        "L": [
+                            "The agreed system requirements are communicated to the key teams.",
+                            "Communication might be less formal, but is effective.",
+                            "Most affected parties are aware of the requirements baseline."
+                        ],
+                        "P": [
+                            "Communication is inconsistent; some teams receive the requirements while others do not.",
+                            "Different teams may be working from different versions of the requirements.",
+                            "The impact analysis results are not communicated."
+                        ],
+                        "N": [
+                            "The agreed system requirements are not communicated to anyone outside the requirements team.",
+                            "There is no established baseline for other teams to work from."
+                        ]
+                    }
+            }
+        ],
+    "SYS.3":[
+            {
+                "BP_ID": "SYS.3.BP1",
+                "BP_title": "Specify static aspects of the system architecture.",
+                "BP_statement": "Specify and document the static aspects of the system architecture with respect to the functional and non-functional system requirements, including external interfaces and a defined set of system elements with their interfaces and relationships.",
+                "BP_key_obj": "Decomposition, Interface Definition, Element Identification, Structural Design.",
+                "BP_user_docs_needed": "System Architecture Design Document, System Requirements Specification, Block Diagrams, Interface Control Documents (ICDs).",
+                "BP_rating_rules": {
+                        "F": [
+                            "The architecture document clearly defines all system elements.",
+                            "All external and internal interfaces are specified, including their properties (e.g., protocols, data types, ranges).",
+                            "The relationships and dependencies between system elements are clearly documented.",
+                            "The static design logically and completely addresses the system requirements."
+                        ],
+                        "L": [
+                            "The main system elements and their key interfaces are defined.",
+                            "Some details in the interface specifications might be missing but can be inferred.",
+                            "The static architecture is mostly complete and provides a solid foundation for design.",
+                            "Minor ambiguities exist but do not prevent implementation."
+                        ],
+                        "P": [
+                            "System elements are identified, but their interfaces are poorly defined or missing.",
+                            "Significant gaps exist in the definition of the system's structure.",
+                            "The documentation is a collection of informal diagrams with little detail.",
+                            "The design does not clearly map to the requirements."
+                        ],
+                        "N": [
+                            "No system architecture document exists.",
+                            "There is no definition of system elements or interfaces."
+                        ]
+                    }
+            },
+            {
+                "BP_ID": "SYS.3.BP2",
+                "BP_title": "Specify dynamic aspects of the system architecture.",
+                "BP_statement": "Specify and document the dynamic aspects of the system architecture with respect to the functional and non-functional system requirements including the behavior of the system elements and their interaction in different system modes.",
+                "BP_key_obj": "Behavioral Modeling, Interaction Analysis, State Modeling, Performance Specification.",
+                "BP_user_docs_needed": "System Architecture Design Document, Sequence Diagrams, State Charts, Timing Diagrams, Mode Management Specification.",
+                "BP_rating_rules": {
+                        "F": [
+                            "The behavior of each system element is specified.",
+                            "Interactions between elements (e.g., message sequences, timing) are clearly documented for different scenarios.",
+                            "System modes (e.g., startup, normal operation, shutdown, fault) are defined and the behavior in each mode is specified.",
+                            "The dynamic model is consistent with the static architecture and fulfills the system requirements."
+                        ],
+                        "L": [
+                            "The dynamic behavior for the main operational scenarios is documented.",
+                            "Some edge cases or fault modes may be less detailed.",
+                            "The overall behavior of the system is understandable and largely complete.",
+                            "The model is a good basis for implementation and integration testing."
+                        ],
+                        "P": [
+                            "Only 'happy path' scenarios are considered; error and startup behaviors are ignored.",
+                            "Dynamic models are incomplete or inconsistent with the static architecture.",
+                            "Timing and sequence information is missing or vague.",
+                            "Significant behavioral questions are left unanswered for the developers."
+                        ],
+                        "N": [
+                            "No dynamic aspects of the architecture are specified.",
+                            "The design only describes what the components are, not what they do or how they interact."
+                        ]
+                    }
+            },
+            {
+                "BP_ID": "SYS.3.BP3",
+                "BP_title": "Analyze system architecture.",
+                "BP_statement": "Analyze the system architecture regarding relevant technical design aspects related to the product lifecycle, and to support project management regarding project estimates, and derive special characteristics for non-software system elements. Document a rationale for the system architectural design decisions.",
+                "BP_key_obj": "Trade-off Analysis, Lifecycle Consideration, Risk Identification, Decision Rationale.",
+                "BP_user_docs_needed": "Architecture Analysis Report (e.g., FMEA, simulation results), Trade-off Studies, Design Decision Records, List of Special Characteristics, Project Estimation Data.",
+                "BP_rating_rules": {
+                        "F": [
+                            "The architecture is systematically analyzed against quality attributes (e.g., performance, safety, security, manufacturability).",
+                            "Analysis methods like FMEA or simulation are used to evaluate the design.",
+                            "Key design decisions are documented with a clear rationale, including alternatives considered.",
+                            "Special characteristics (e.g., critical dimensions, safety-critical parameters) are identified.",
+                            "The analysis provides a solid basis for project estimates."
+                        ],
+                        "L": [
+                            "The architecture is analyzed for key technical aspects.",
+                            "Analysis may be less formal (e.g., expert reviews) but still effective at identifying major issues.",
+                            "Major design decisions have a documented rationale.",
+                            "The design is considered robust and feasible."
+                        ],
+                        "P": [
+                            "Analysis is superficial or non-existent.",
+                            "Design decisions are made without a clear rationale or consideration of alternatives.",
+                            "Potential issues with performance, manufacturability, or other qualities are not identified.",
+                            "Special characteristics are not identified, leading to potential quality issues."
+                        ],
+                        "N": [
+                            "No analysis of the architecture is performed.",
+                            "The first idea is implemented without evaluation."
+                        ]
+                    }
+            },
+            {
+                "BP_ID": "SYS.3.BP4",
+                "BP_title": "Ensure consistency and establish bidirectional traceability.",
+                "BP_statement": "Ensure consistency and establish bidirectional traceability between the elements of the system architecture and the system requirements that represent properties or characteristics of the physical end product.",
+                "BP_key_obj": "Traceability, Consistency, Coverage Analysis, Allocation.",
+                "BP_user_docs_needed": "Architecture-to-Requirements Traceability Matrix, Consistency Analysis Report, Requirements Management Tool Data, Review Records.",
+                "BP_rating_rules": {
+                        "F": [
+                            "Bidirectional traceability is established between system requirements and the architectural elements that implement them.",
+                            "A consistency check is performed to ensure the architecture fulfills the linked requirements without contradiction.",
+                            "Coverage analysis demonstrates that all relevant system requirements have been allocated to the architecture.",
+                            "Traceability is complete, correct, and maintained."
+                        ],
+                        "L": [
+                            "Traceability is established for the vast majority of requirements to the architecture.",
+                            "There may be a few missing or incorrect links, but they are minor.",
+                            "Consistency is checked for critical areas.",
+                            "Coverage is largely complete."
+                        ],
+                        "P": [
+                            "Traceability is sporadic, with many missing links.",
+                            "Requirements are not allocated to specific architectural elements.",
+                            "It is impossible to tell if the architecture covers all requirements.",
+                            "Impact analysis of a requirement change on the architecture is difficult or impossible."
+                        ],
+                        "N": [
+                            "No traceability is established between requirements and architecture."
+                        ]
+                    }
+            },
+            {
+                "BP_ID": "SYS.3.BP5",
+                "BP_title": "Communicate agreed system architecture.",
+                "BP_statement": "Communicate the agreed system architecture, including the special characteristics, to all affected parties.",
+                "BP_key_obj": "Alignment, Information Distribution, Establishing a Design Baseline, Knowledge Transfer.",
+                "BP_user_docs_needed": "Communication Plan, Baselined System Architecture Design Document, List of Special Characteristics, Meeting Minutes, Release Notes.",
+                "BP_rating_rules": {
+                        "F": [
+                            "A formal communication of the baselined system architecture is made to all affected parties (e.g., SW/HW/ME design teams, test teams).",
+                            "The communication includes the list of special characteristics and the rationale for key decisions.",
+                            "A mechanism is in place to ensure all parties are working from the correct version of the architecture.",
+                            "Evidence of communication (e.g., email, review record) is kept."
+                        ],
+                        "L": [
+                            "The agreed architecture is communicated to the key teams.",
+                            "Communication might be less formal but is effective in aligning the teams.",
+                            "Most affected parties are aware of the architectural baseline."
+                        ],
+                        "P": [
+                            "Communication is inconsistent; some teams receive the architecture while others do not.",
+                            "Different teams may be working from different versions or have different understandings of the architecture.",
+                            "Special characteristics are not communicated, leading to risks in implementation."
+                        ],
+                        "N": [
+                            "The agreed architecture is not communicated to anyone outside the architecture team.",
+                            "There is no established design baseline for implementation teams to work from."
+                        ]
+                    }
+            }
+        ],
+    "SYS.4":[
+            {
+                "BP_ID": "SYS.4.BP1",
+                "BP_title": "Specify verification measures for system integration.",
+                "BP_statement": "Specify the verification measures, based on a defined sequence and preconditions for the integration of system elements against the system static and dynamic aspects of the system architecture, including techniques for the verification measures, pass/fail criteria for verification measures, a definition of entry and exit criteria for the verification measures, and the required verification infrastructure and environment setup.",
+                "BP_key_obj": "Test Case Design, Test Environment Specification, Pass/Fail Criteria, Integration Strategy.",
+                "BP_user_docs_needed": "System Integration Test Specification, System Architecture Design Document, Integration Strategy Document, Test Environment Specification.",
+                "BP_rating_rules": {
+                        "F": [
+                            "Verification measures (test cases) are specified for verifying interfaces and interactions between system elements as defined in the architecture.",
+                            "Each verification measure includes unambiguous pass/fail criteria.",
+                            "The required test environment, tools, and infrastructure are specified.",
+                            "The integration sequence and preconditions for starting verification are clearly defined.",
+                            "The specification is detailed enough for a test engineer to execute it without ambiguity."
+                        ],
+                        "L": [
+                            "Verification measures are specified for the most critical interfaces and interactions.",
+                            "Pass/fail criteria are generally clear, but some may require interpretation.",
+                            "The test environment is specified, but some minor details might be missing.",
+                            "The specification is largely complete and usable."
+                        ],
+                        "P": [
+                            "Verification measures are defined at a high level (e.g., 'Test the CAN interface') without specific steps or criteria.",
+                            "Pass/fail criteria are missing or subjective ('should work correctly').",
+                            "The required test environment is not specified.",
+                            "Significant ambiguity exists, requiring the tester to design the test during execution."
+                        ],
+                        "N": [
+                            "No integration verification measures are specified.",
+                            "Integration is performed with ad-hoc, undocumented 'smoke tests'."
+                        ]
+                    }
+            },
+            {
+                "BP_ID": "SYS.4.BP2",
+                "BP_title": "Select verification measures.",
+                "BP_statement": "Document the selection of verification measures for each integration step considering selection criteria including criteria for regression verification. The documented selection of verification measures shall have sufficient coverage according to the release scope.",
+                "BP_key_obj": "Test Scoping, Regression Strategy, Risk-based Selection, Release Readiness.",
+                "BP_user_docs_needed": "System Integration Test Plan, Release Plan, Change Log, Risk Assessment Log, Selected Test Set Document.",
+                "BP_rating_rules": {
+                        "F": [
+                            "A documented strategy for selecting verification measures for each release exists and is followed.",
+                            "The selection considers the release scope, changes since the last release, and risk analysis.",
+                            "A specific set of verification measures for regression testing is defined and justified.",
+                            "The selected set provides demonstrably sufficient coverage for the integration level and release scope."
+                        ],
+                        "L": [
+                            "A selection of verification measures is made for each release.",
+                            "The rationale for selection is mostly clear, though not always formally documented.",
+                            "Regression testing is performed based on experience and knowledge of changes.",
+                            "The selection is reasonable and covers the main changes and risks."
+                        ],
+                        "P": [
+                            "The same set of tests is run for every release, regardless of the changes (inefficient).",
+                            "Or, only new features are tested, with no regression testing.",
+                            "The selection is ad-hoc, with no clear strategy or documentation.",
+                            "Coverage is unknown."
+                        ],
+                        "N": [
+                            "No selection of verification measures is performed; testing is chaotic and unplanned."
+                        ]
+                    }
+            },
+            {
+                "BP_ID": "SYS.4.BP3",
+                "BP_title": "Integrate system elements and perform integration verification.",
+                "BP_statement": "Integrate the system elements until the system is fully integrated according to the specified interfaces and interactions between the system elements, and according to the defined sequence and defined preconditions. Perform the selected system integration verification measures. Record the verification measure data including pass/fail status and corresponding verification measure data.",
+                "BP_key_obj": "System Assembly, Test Execution, Result Recording, Defect Reporting.",
+                "BP_user_docs_needed": "Integration Log, Test Execution Log, Test Results, Defect Reports (see SUP.9), Integrated System.",
+                "BP_rating_rules": {
+                        "F": [
+                            "System elements are integrated following the defined integration sequence.",
+                            "The selected verification measures are executed systematically.",
+                            "The results of each step (pass/fail status) are recorded accurately.",
+                            "All deviations from expected results (failures) are documented in a problem resolution system (see SUP.9).",
+                            "The test environment and item versions are recorded for each test run."
+                        ],
+                        "L": [
+                            "Integration and verification are performed.",
+                            "Results are recorded, but some details of the execution (e.g., specific software version) may be missing.",
+                            "Most failures are reported, but some may be fixed informally.",
+                            "The process is largely effective."
+                        ],
+                        "P": [
+                            "Integration is performed without following a sequence.",
+                            "Only a subset of the selected tests is executed.",
+                            "Test results are not formally recorded (e.g., 'it seemed to work').",
+                            "Failures are not systematically reported, leading to recurring problems."
+                        ],
+                        "N": [
+                            "No integration verification is performed, or if it is, no records are kept."
+                        ]
+                    }
+            },
+            {
+                "BP_ID": "SYS.4.BP4",
+                "BP_title": "Ensure consistency and establish bidirectional traceability.",
+                "BP_statement": "Ensure consistency and establish bidirectional traceability between verification measures and the system architecture. Establish bidirectional traceability between verification results and verification measures.",
+                "BP_key_obj": "Test Coverage Analysis, Traceability, Consistency, Status Reporting.",
+                "BP_user_docs_needed": "Architecture-to-Test-Case Traceability Matrix, Test-Case-to-Test-Result Traceability, Consistency Analysis Report, Test Coverage Report.",
+                "BP_rating_rules": {
+                        "F": [
+                            "Bidirectional traceability is established between architectural elements/interfaces and the verification measures that test them.",
+                            "Bidirectional traceability is established between every executed verification measure and its corresponding result.",
+                            "A consistency check is performed to ensure the verification measures are appropriate for the architectural elements they trace to.",
+                            "Coverage analysis demonstrates that all specified interfaces and interactions are tested."
+                        ],
+                        "L": [
+                            "Traceability is established for most verification measures to the architecture.",
+                            "Traceability from test results back to the test cases exists.",
+                            "There may be minor gaps or inconsistencies in the traceability.",
+                            "Coverage is largely complete for critical areas."
+                        ],
+                        "P": [
+                            "Traceability is sporadic or only exists in one direction.",
+                            "It is difficult to determine which parts of the architecture have been tested.",
+                            "It is difficult to find the result for a specific test case.",
+                            "Test coverage is unknown."
+                        ],
+                        "N": [
+                            "No traceability is established."
+                        ]
+                    }
+            },
+            {
+                "BP_ID": "SYS.4.BP5",
+                "BP_title": "Summarize and communicate results.",
+                "BP_statement": "Summarize the system integration and integration verification results and communicate them to all affected parties.",
+                "BP_key_obj": "Reporting, Communication, Status Transparency, Decision Support.",
+                "BP_user_docs_needed": "System Integration Test Summary Report, Communication Evidence (e.g., emails, meeting minutes), Defect Summary Report, Test Coverage Statistics.",
+                "BP_rating_rules": {
+                        "F": [
+                            "A summary report is created after each integration and verification cycle.",
+                            "The report includes a summary of executed tests, pass/fail statistics, a list of open defects, and a statement on test coverage.",
+                            "The report provides a clear assessment of the integration status and remaining risks.",
+                            "The report is communicated to all affected parties to support decision-making (e.g., readiness for system testing)."
+                        ],
+                        "L": [
+                            "Results are summarized and communicated, for example, in project status meetings.",
+                            "The summary provides a good overview of the integration status, although it may not be a formal, standalone report.",
+                            "Key stakeholders are informed of the progress and major issues."
+                        ],
+                        "P": [
+                            "Only raw test logs or a list of defects are provided, without any summary or analysis.",
+                            "Communication is ad-hoc or non-existent.",
+                            "Stakeholders are not aware of the current integration status or quality."
+                        ],
+                        "N": [
+                            "No summary or communication of results occurs."
+                        ]
+                    }
+            }
+        ],
+    "SYS.5":[
+            {
+                "BP_ID": "SYS.5.BP1",
+                "BP_title": "Specify verification measures for system verification.",
+                "BP_statement": "Specify the verification measures for system verification suitable to provide evidence for compliance with the functional and non-functional information in the system requirements, including techniques for the verification measures, pass/fail criteria for verification measures, a definition of entry and exit criteria for the verification measures, necessary sequence of verification measures, and the required verification infrastructure and environment setup.",
+                "BP_key_obj": "Test Case Design, Requirements-based Testing, Test Environment Specification, Pass/Fail Criteria.",
+                "BP_user_docs_needed": "System Test Specification, System Requirements Specification, Test Environment Specification, Test Strategy.",
+                "BP_rating_rules": {
+                        "F": [
+                            "Verification measures (test cases) are specified for verifying each system requirement.",
+                            "Each verification measure includes unambiguous pass/fail criteria derived from the requirement.",
+                            "The required test environment, tools, and infrastructure are specified to simulate the real-world context.",
+                            "Test entry/exit criteria and any necessary sequencing are defined.",
+                            "The specification is detailed enough for a test engineer to execute it without ambiguity."
+                        ],
+                        "L": [
+                            "Verification measures are specified for the most critical system requirements.",
+                            "Pass/fail criteria are generally clear, but some may require interpretation.",
+                            "The test environment is specified, but some minor details might be missing.",
+                            "The specification is largely complete and usable for verifying the system."
+                        ],
+                        "P": [
+                            "Verification measures are defined at a high level (e.g., 'Test feature X') without specific steps or criteria derived from requirements.",
+                            "Pass/fail criteria are missing or subjective ('system should be user-friendly').",
+                            "The required test environment is not specified.",
+                            "Significant ambiguity exists, making verification results unreliable."
+                        ],
+                        "N": [
+                            "No system verification measures are specified.",
+                            "Testing is based on ad-hoc, undocumented exploration of the system."
+                        ]
+                    }
+            },
+            {
+                "BP_ID": "SYS.5.BP2",
+                "BP_title": "Select verification measures.",
+                "BP_statement": "Document the selection of verification measures considering selection criteria including criteria for regression verification. The selection of verification measures shall have sufficient coverage according to the release scope.",
+                "BP_key_obj": "Test Scoping, Regression Strategy, Risk-based Selection, Release Readiness.",
+                "BP_user_docs_needed": "System Test Plan, Release Plan, Change Log, Risk Assessment Log, Selected Test Set Document.",
+                "BP_rating_rules": {
+                        "F": [
+                            "A documented strategy for selecting verification measures for each release exists and is followed.",
+                            "The selection considers requirement priorities, changes since the last release, and risk analysis.",
+                            "A specific set of verification measures for regression testing is defined and justified to ensure existing functionality is not broken.",
+                            "The selected set provides demonstrably sufficient coverage of the system requirements for the release."
+                        ],
+                        "L": [
+                            "A selection of verification measures is made for each release.",
+                            "The rationale for selection is mostly clear, though not always formally documented.",
+                            "Regression testing is performed based on experience and knowledge of changes.",
+                            "The selection is reasonable and covers the main requirements and risks."
+                        ],
+                        "P": [
+                            "The same full set of tests is run for every minor release, regardless of the changes (inefficient).",
+                            "Or, only new features are tested, with no regression testing, leading to escapes.",
+                            "The selection is ad-hoc, with no clear strategy or documentation.",
+                            "Requirements coverage is unknown."
+                        ],
+                        "N": [
+                            "No selection of verification measures is performed; testing is chaotic and unplanned."
+                        ]
+                    }
+            },
+            {
+                "BP_ID": "SYS.5.BP3",
+                "BP_title": "Perform verification of the integrated system.",
+                "BP_statement": "Perform the verification of the integrated system using the selected verification measures. Record the verification results including pass/fail status and corresponding verification measure data.",
+                "BP_key_obj": "Test Execution, Result Recording, Evidence Collection, Defect Reporting.",
+                "BP_user_docs_needed": "Test Execution Log, Test Results, Defect Reports (see SUP.9), Evidence (e.g., logs, screenshots).",
+                "BP_rating_rules": {
+                        "F": [
+                            "The fully integrated system is verified using the selected verification measures.",
+                            "The results of each step (pass/fail status) are recorded accurately.",
+                            "Objective evidence of the results (e.g., log files, measurement data, photos) is collected and stored.",
+                            "All deviations from expected results (failures) are documented in a problem resolution system (see SUP.9).",
+                            "The test environment and system/item versions are recorded for each test run."
+                        ],
+                        "L": [
+                            "System verification is performed.",
+                            "Results are recorded, but supporting evidence might not be collected for all tests.",
+                            "Most failures are reported, but some may be fixed informally without a record.",
+                            "The process is largely effective at finding defects."
+                        ],
+                        "P": [
+                            "Only a subset of the selected tests is executed.",
+                            "Test results are not formally recorded (e.g., a simple verbal 'it's done').",
+                            "Failures are not systematically reported, leading to them not being fixed or reappearing later.",
+                            "The verification is unreliable."
+                        ],
+                        "N": [
+                            "No system verification is performed, or if it is, no records are kept."
+                        ]
+                    }
+            },
+            {
+                "BP_ID": "SYS.5.BP4",
+                "BP_title": "Ensure consistency and establish bidirectional traceability.",
+                "BP_statement": "Ensure consistency and establish bidirectional traceability between verification measures and system requirements. Establish bidirectional traceability between verification results and verification measures.",
+                "BP_key_obj": "Requirements Coverage Analysis, Traceability, Consistency, Status Reporting.",
+                "BP_user_docs_needed": "Requirements-to-Test-Case Traceability Matrix, Test-Case-to-Test-Result Traceability, Consistency Analysis Report, Test Coverage Report.",
+                "BP_rating_rules": {
+                        "F": [
+                            "Bidirectional traceability is established between each system requirement and the verification measure(s) that test it.",
+                            "Bidirectional traceability is established between every executed verification measure and its corresponding result.",
+                            "A consistency check is performed to ensure the verification measures are appropriate for the requirements they trace to.",
+                            "Coverage analysis demonstrates that all system requirements in scope for the release are tested."
+                        ],
+                        "L": [
+                            "Traceability is established for most verification measures to the system requirements.",
+                            "Traceability from test results back to the test cases exists.",
+                            "There may be minor gaps or inconsistencies in the traceability.",
+                            "Coverage is largely complete for prioritized requirements."
+                        ],
+                        "P": [
+                            "Traceability is sporadic or only exists in one direction.",
+                            "It is difficult to determine which requirements have been tested.",
+                            "It is difficult to find the result for a specific test case.",
+                            "Requirements test coverage is unknown."
+                        ],
+                        "N": [
+                            "No traceability is established."
+                        ]
+                    }
+            },
+            {
+                "BP_ID": "SYS.5.BP5",
+                "BP_title": "Summarize and communicate results.",
+                "BP_statement": "Summarize the system verification results and communicate them to all affected parties.",
+                "BP_key_obj": "Reporting, Communication, Quality Assessment, Release Decision Support.",
+                "BP_user_docs_needed": "System Verification Summary Report, Communication Evidence (e.g., emails, meeting minutes), Defect Summary Report, Requirements Coverage Statistics.",
+                "BP_rating_rules": {
+                        "F": [
+                            "A summary report is created at the conclusion of the verification cycle.",
+                            "The report includes a summary of executed tests, pass/fail statistics, a list of open defects with severity, and a statement on requirements coverage.",
+                            "The report provides a clear assessment of product quality against the requirements and remaining risks.",
+                            "The report is communicated to all affected parties to support release decisions."
+                        ],
+                        "L": [
+                            "Results are summarized and communicated, for example, in project status meetings.",
+                            "The summary provides a good overview of the product quality, although it may not be a formal, standalone report.",
+                            "Key stakeholders are informed of the verification status and major issues."
+                        ],
+                        "P": [
+                            "Only raw test logs or a list of defects are provided, without any summary or analysis.",
+                            "Communication is ad-hoc or non-existent.",
+                            "Stakeholders are not aware of the product's quality or its readiness for release."
+                        ],
+                        "N": [
+                            "No summary or communication of results occurs."
+                        ]
+                    }
+            }
+        ],
+    "CapabilityLevel": {
+        "1": {
+            "PA_name": "Performed process",
+            "PA_ID": "PA 1.1",
+            "GenericPractices": [
+                {
+                    "GP_ID": "GP 1.1.1",
+                    "GP_title": "Achieve the process outcomes",
+                    "GP_statement": "Achieve the intent of the base practices. Produce work products that evidence the process outcomes.",
+                    "GP_key_obj": "Execute the process, Achieve the process purpose, Create required outputs",
+                    "GP_user_docs_needed": "All process-specific information items as defined for the Base Practices",
+                    "GP_rating_rules": {
+                            "N": [
+                                "There is little or no evidence of achieving the process purpose.",
+                                "The base practices are not performed.",
+                                "Required work products are missing or add no value."
+                            ],
+                            "P": [
+                                "There is some evidence of achieving the process purpose, but it is ad-hoc and unpredictable.",
+                                "Some base practices are attempted, but with significant weaknesses.",
+                                "Work products are incomplete or of poor quality."
+                            ],
+                            "L": [
+                                "There is evidence of a systematic approach to achieving the process purpose.",
+                                "Most base practices are performed effectively, but some weaknesses may exist.",
+                                "The process largely achieves its outcomes."
+                            ],
+                            "F": [
+                                "There is evidence of a complete and systematic achievement of the process purpose.",
+                                "All base practices are performed effectively.",
+                                "Work products provide full evidence of the process outcomes being met."
+                            ]
+                        }
+                }
+            ]
+        },
+        "2": {
+            "PA_name": "Managed process",
+            "PA_ID": "PA 2.1 and PA 2.2",
+            "GenericPractices": [
+                {
+                    "GP_ID": "GP 2.1.1",
+                    "GP_title": "Identify the objectives and define a strategy for the performance of the process.",
+                    "GP_statement": "The scope of the process activities including the management of process performance and the management of work products are determined. Corresponding results to be achieved are determined. Process performance objectives and associated criteria are identified. Assumptions and constraints are considered when identifying the performance objectives. Approach and methodology for the process performance is determined.",
+                    "GP_key_obj": "Define success for the process, Set clear targets, Establish a consistent approach, Plan for management",
+                    "GP_user_docs_needed": "Process Performance Strategy, Process Performance Objectives",
+                    "GP_rating_rules": {
+                            "N": [
+                                "No objectives or strategy are defined for the process.",
+                                "Work is purely reactive."
+                            ],
+                            "P": [
+                                "Vague objectives exist (e.g., 'test the software'), but no concrete, measurable criteria or strategy are documented.",
+                                "The approach is not defined."
+                            ],
+                            "L": [
+                                "A strategy and clear objectives are defined for the process performance.",
+                                "They might not fully cover all aspects (e.g., work product management) or might lack detail on assumptions."
+                            ],
+                            "F": [
+                                "A clear strategy and specific, measurable performance objectives (e.g., delivery dates, quality targets, test coverage) are defined, documented, and understood for the process. Assumptions and constraints are considered."
+                            ]
+                        }
+                },
+                {
+                    "GP_ID": "GP 2.1.2",
+                    "GP_title": "Plan the performance of the process.",
+                    "GP_statement": "The planning for the performance of the process is established according to the defined objectives, criteria, and strategy. Process activities and work packages are defined. Estimates for work packages are identified using appropriate methods.",
+                    "GP_key_obj": "Create an actionable plan, Break down work, Estimate effort, Define a schedule",
+                    "GP_user_docs_needed": "Work Package, Schedule",
+                    "GP_rating_rules": {
+                            "N": [
+                                "No plan exists for the process."
+                            ],
+                            "P": [
+                                "A plan exists but it is high-level, lacks detail on work packages, or has no realistic estimates.",
+                                "The plan is not based on the defined objectives."
+                            ],
+                            "L": [
+                                "The process is planned with defined work packages and estimates.",
+                                "The plan is generally followed, but estimates might be based on weak methods or not consistently updated."
+                            ],
+                            "F": [
+                                "Detailed planning for the process is established and maintained, including defined work packages, effort estimates based on appropriate methods, and a defined schedule with milestones."
+                            ]
+                        }
+                },
+                {
+                    "GP_ID": "GP 2.1.3",
+                    "GP_title": "Determine resource needs.",
+                    "GP_statement": "The required amount of human resources, and experience, knowledge and skill needs for the for process performance are determined based on the planning. The needs for physical and material resources are determined based on the planning. Required responsibilities and authorities to perform the process, and to manage the corresponding work products are determined.",
+                    "GP_key_obj": "Identify necessary skills and people, Identify required tools and infrastructure, Define roles and responsibilities",
+                    "GP_user_docs_needed": "Resource Needs",
+                    "GP_rating_rules": {
+                            "N": [
+                                "Resource needs are not determined.",
+                                "It is assumed the right people and tools are available."
+                            ],
+                            "P": [
+                                "Some resource needs are identified, but the analysis is incomplete.",
+                                "Skill requirements are not defined, or responsibilities are unclear."
+                            ],
+                            "L": [
+                                "Human and physical resource needs are determined based on the plan.",
+                                "Responsibilities are defined but may have some ambiguities or overlaps."
+                            ],
+                            "F": [
+                                "All required resources (human with specific skills, physical, material) are systematically determined based on the process plan. Responsibilities and authorities for all process roles are clearly defined."
+                            ]
+                        }
+                },
+                {
+                    "GP_ID": "GP 2.1.4",
+                    "GP_title": "Identify and make available resources.",
+                    "GP_statement": "The individuals performing and managing the process are identified and allocated according to the determined needs. The individuals performing and managing the process are being qualified to execute their responsibilities. The other resources, necessary for performing the process are identified, made available, allocated and used according to the determined needs.",
+                    "GP_key_obj": "Staff the process with qualified people, Provide necessary tools and equipment, Ensure resource availability",
+                    "GP_user_docs_needed": "Resource Allocation",
+                    "GP_rating_rules": {
+                            "N": [
+                                "Resources are not formally allocated.",
+                                "Team members are not qualified for their tasks."
+                            ],
+                            "P": [
+                                "Resources are allocated, but they may not match the determined needs (e.g., wrong skills, insufficient tools).",
+                                "Qualification is not ensured."
+                            ],
+                            "L": [
+                                "The necessary resources are identified and made available.",
+                                "There may be some delays in availability or minor gaps in qualification that are being addressed."
+                            ],
+                            "F": [
+                                "Individuals are allocated to the process according to the determined needs, and their qualification is ensured (e.g., through training). All other necessary resources are identified, made available, and allocated for use."
+                            ]
+                        }
+                },
+                {
+                    "GP_ID": "GP 2.1.5",
+                    "GP_title": "Monitor and adjust the performance of the process.",
+                    "GP_statement": "Process performance is monitored to identify deviations from the planning. Appropriate actions in case of deviations from the planning are taken. The planning is adjusted as necessary.",
+                    "GP_key_obj": "Track progress against the plan, Identify and react to deviations, Keep the plan realistic",
+                    "GP_user_docs_needed": "Progress Status, Schedule",
+                    "GP_rating_rules": {
+                            "N": [
+                                "Performance is not monitored.",
+                                "The plan, if it exists, is never looked at again."
+                            ],
+                            "P": [
+                                "Monitoring is ad-hoc or informal.",
+                                "Deviations are identified late, and actions are reactive and often ineffective. The plan is not adjusted."
+                            ],
+                            "L": [
+                                "Process performance is regularly monitored against the plan, and deviations are identified.",
+                                "Actions are taken to address them, though adjustments to the plan may sometimes be delayed."
+                            ],
+                            "F": [
+                                "Process performance is systematically monitored against the plan, deviations are identified, appropriate corrective actions are taken, and the plan is adjusted as necessary to meet the objectives."
+                            ]
+                        }
+                },
+                {
+                    "GP_ID": "GP 2.1.6",
+                    "GP_title": "Manage the interfaces between involved parties.",
+                    "GP_statement": "The individuals and groups including required external parties involved in the process performance are determined. Responsibilities are assigned to the relevant individuals or parties. Communication mechanisms between the involved parties are determined. Effective communication between the involved parties is established and maintained.",
+                    "GP_key_obj": "Ensure clear communication, Manage dependencies, Assign interface responsibilities",
+                    "GP_user_docs_needed": "Communication Matrix, Communication Evidence",
+                    "GP_rating_rules": {
+                            "N": [
+                                "Interfaces are not managed.",
+                                "Communication between involved parties is poor or non-existent."
+                            ],
+                            "P": [
+                                "Involved parties are known, but responsibilities at the interfaces are unclear.",
+                                "Communication is informal and often leads to misunderstandings."
+                            ],
+                            "L": [
+                                "Interfaces and responsibilities are determined and communication mechanisms are defined.",
+                                "Communication is mostly effective, but occasional breakdowns or ambiguities may occur."
+                            ],
+                            "F": [
+                                "All internal and external parties involved in the process are identified, interface responsibilities are assigned, and effective communication mechanisms are established and maintained."
+                            ]
+                        }
+                },
+                {
+                    "GP_ID": "GP 2.2.1",
+                    "GP_title": "Define the requirements for the work products.",
+                    "GP_statement": "The requirements for the content and structure of the work products to be produced are defined. Quality criteria for the work products are identified. Appropriate review and approval criteria for the work products are defined.",
+                    "GP_key_obj": "Ensure work product quality and consistency, Define content and structure standards, Establish review and approval gates",
+                    "GP_user_docs_needed": "Requirements for work products, Review and approval criteria for work products, Quality criteria",
+                    "GP_rating_rules": {
+                            "N": [
+                                "There are no defined requirements for work products.",
+                                "Quality is based on individual preference."
+                            ],
+                            "P": [
+                                "Some requirements for work products exist (e.g., a template), but quality, review, and approval criteria are not defined."
+                            ],
+                            "L": [
+                                "Requirements for the content and structure of work products are defined.",
+                                "Quality and review/approval criteria are defined but may be generic or not consistently applied."
+                            ],
+                            "F": [
+                                "Clear and specific requirements for the content and structure of work products are defined, along with measurable quality criteria and formal review and approval criteria."
+                            ]
+                        }
+                },
+                {
+                    "GP_ID": "GP 2.2.2",
+                    "GP_title": "Define the requirements for storage and control of the work products.",
+                    "GP_statement": "Requirements for the storage and control of the work products are defined, including their identification and distribution.",
+                    "GP_key_obj": "Establish configuration management rules, Ensure data integrity and availability, Define access and version control",
+                    "GP_user_docs_needed": "Requirements for work products",
+                    "GP_rating_rules": {
+                            "N": [
+                                "There are no defined requirements for how work products should be stored or controlled."
+                            ],
+                            "P": [
+                                "General guidelines exist (e.g., 'use the shared drive'), but specific requirements for identification, versioning, and access control are missing."
+                            ],
+                            "L": [
+                                "Requirements for storage and control are defined, but may lack detail in areas like distribution or specific versioning rules."
+                            ],
+                            "F": [
+                                "Clear requirements for the storage, identification, access control, versioning, and distribution of all work products are defined and documented."
+                            ]
+                        }
+                },
+                {
+                    "GP_ID": "GP 2.2.3",
+                    "GP_title": "Identify, store and control the work products.",
+                    "GP_statement": "The work products to be controlled are identified. The work products are stored and controlled in accordance with the requirements. Change control is established for work products. Versioning and baselining of the work products is performed in accordance with the requirements for storage and control of the work products. The work products including the revision status are made available through appropriate mechanisms.",
+                    "GP_key_obj": "Implement configuration management, Maintain version history, Establish baselines, Control changes",
+                    "GP_user_docs_needed": "Repository, Baseline",
+                    "GP_rating_rules": {
+                            "N": [
+                                "Work products are stored on local machines with no control.",
+                                "There is no versioning or change control."
+                            ],
+                            "P": [
+                                "Work products are stored in a central repository, but control is weak.",
+                                "Versioning is inconsistent, baselines are not used, and changes are not formally controlled."
+                            ],
+                            "L": [
+                                "Work products are identified, stored, and controlled.",
+                                "Versioning is used, and baselines are created, but the change control process for baselined items might be informal or not always followed."
+                            ],
+                            "F": [
+                                "All work products are identified and stored in a controlled repository. Change control, versioning, and baselining are performed systematically in accordance with defined requirements. The status of all items is clear and available."
+                            ]
+                        }
+                },
+                {
+                    "GP_ID": "GP 2.2.4",
+                    "GP_title": "Review and adjust work products.",
+                    "GP_statement": "The work products are reviewed against the defined requirements and criteria. Resolution of issues arising from work products reviews is ensured.",
+                    "GP_key_obj": "Verify work product quality, Ensure requirements are met, Resolve defects and issues",
+                    "GP_user_docs_needed": "Review evidence",
+                    "GP_rating_rules": {
+                            "N": [
+                                "Work products are not reviewed.",
+                                "They are used 'as-is'."
+                            ],
+                            "P": [
+                                "Reviews are conducted, but they are informal and not based on defined criteria.",
+                                "Issues are identified but not tracked to resolution."
+                            ],
+                            "L": [
+                                "Work products are reviewed against defined criteria, and issues are recorded.",
+                                "The process for ensuring resolution of all issues may have weaknesses or delays."
+                            ],
+                            "F": [
+                                "All work products are formally reviewed against their defined requirements and quality criteria. All issues identified during reviews are documented, tracked, and driven to resolution."
+                            ]
+                        }
+                }
+            ]
+        },
+        "3": {
+            "PA_name": "Established process",
+            "PA_ID": "PA 3.1 and PA 3.2",
+            "GenericPractices": [
+                {
+                    "GP_ID": "GP 3.1.1",
+                    "GP_title": "Establish and maintain the standard process.",
+                    "GP_statement": "A suitable standard process is developed including required activities and their interactions. Inputs and outputs of the standard process are defined including the corresponding entry and exit criteria to determine the interactions and sequence with other processes. Process performance roles are identified and assigned to the standard process activities including their type of involvement, responsibilities, and authorities. Suitable guidance, procedures, and templates are provided to support the execution of the process as needed. Appropriate tailoring guidelines including predefined unambiguous criteria as well as predefined and unambiguous proceedings are defined based on identified deployment needs and context of the standard process. The standard process is maintained according to corresponding feedback from the monitoring of the deployed processes.",
+                    "GP_key_obj": "Define a repeatable organizational process, Provide standard assets (templates, guidelines), Allow for controlled tailoring, Continuously improve the standard",
+                    "GP_user_docs_needed": "Process Description, Tailoring Guideline",
+                    "GP_rating_rules": {
+                            "N": [
+                                "No standard process exists for the organization.",
+                                "Each project reinvents the process from scratch."
+                            ],
+                            "P": [
+                                "A standard process is documented but is of poor quality, incomplete, or not maintained.",
+                                "Tailoring guidelines are missing or ambiguous, leading to inconsistent deployment."
+                            ],
+                            "L": [
+                                "A standard process is developed and maintained, including roles, activities, and assets.",
+                                "Tailoring guidelines exist but may lack the necessary detail, or the process for incorporating feedback is informal."
+                            ],
+                            "F": [
+                                "A complete standard process is developed, established, and maintained, including activities, roles, entry/exit criteria, supporting assets (templates, guidance), and clear tailoring guidelines. The process is updated based on feedback."
+                            ]
+                        }
+                },
+                {
+                    "GP_ID": "GP 3.1.2",
+                    "GP_title": "Determine the required competencies.",
+                    "GP_statement": "Required competencies, skills, and experience for performing the standard process are determined for the identified roles. Appropriate qualification methods to acquire the necessary competencies and skills are determined, maintained, and made available for the identified roles.",
+                    "GP_key_obj": "Define skill requirements for process roles, Establish training and qualification paths, Ensure organizational capability",
+                    "GP_user_docs_needed": "Role Description, Qualification method description",
+                    "GP_rating_rules": {
+                            "N": [
+                                "Competency requirements are not considered for process roles."
+                            ],
+                            "P": [
+                                "Competencies are vaguely described for roles.",
+                                "No specific qualification methods (e.g., training courses) are defined or made available."
+                            ],
+                            "L": [
+                                "Required competencies are determined for the standard process roles, and some qualification methods are available.",
+                                "The link between roles, competencies, and available training may not be fully systematic."
+                            ],
+                            "F": [
+                                "The competencies, skills, and experience required for the roles in the standard process are clearly determined. Appropriate qualification methods are defined, maintained, and made available to develop these competencies."
+                            ]
+                        }
+                },
+                {
+                    "GP_ID": "GP 3.1.3",
+                    "GP_title": "Determine the required resources.",
+                    "GP_statement": "Required physical and material resources and process infrastructure needs for performing the standard process are determined.",
+                    "GP_key_obj": "Identify standard tools and infrastructure, Plan for resource needs at an organizational level, Ensure process support",
+                    "GP_user_docs_needed": "Process resource and infrastructure description",
+                    "GP_rating_rules": {
+                            "N": [
+                                "Resource and infrastructure needs are not determined at the organizational level."
+                            ],
+                            "P": [
+                                "Some standard tools are mentioned, but a systematic determination of all infrastructure needs for the standard process is missing."
+                            ],
+                            "L": [
+                                "The key resources and infrastructure needed to perform the standard process are determined.",
+                                "The list may be incomplete or not regularly updated."
+                            ],
+                            "F": [
+                                "The required physical resources, tools, and process infrastructure needed to support the standard process are systematically determined and documented as part of the standard process definition."
+                            ]
+                        }
+                },
+                {
+                    "GP_ID": "GP 3.1.4",
+                    "GP_title": "Determine suitable methods to monitor the standard process.",
+                    "GP_statement": "Methods and required activities for monitoring the effectiveness and adequacy of the standard process are determined. Appropriate criteria and information needed to monitor the standard process are defined.",
+                    "GP_key_obj": "Plan for process performance measurement, Define metrics for process effectiveness, Establish a feedback loop for improvement",
+                    "GP_user_docs_needed": "Process monitoring method",
+                    "GP_rating_rules": {
+                            "N": [
+                                "There is no plan to monitor the standard process."
+                            ],
+                            "P": [
+                                "The idea of monitoring exists, but no concrete methods or criteria are defined.",
+                                "Data gathering is ad-hoc."
+                            ],
+                            "L": [
+                                "Methods for monitoring the standard process are determined, but the criteria may be qualitative and subjective, or the information gathered may not be systematically analyzed."
+                            ],
+                            "F": [
+                                "Suitable methods (e.g., process compliance checks, audits, lessons learned) and clear criteria for monitoring the effectiveness, suitability, and adequacy of the standard process are determined and defined."
+                            ]
+                        }
+                },
+                {
+                    "GP_ID": "GP 3.2.1",
+                    "GP_title": "Deploy a defined process that satisfies the context specific requirements of the use of the standard process.",
+                    "GP_statement": "The defined process is appropriately selected and/or tailored from the standard process. Conformance of defined process with standard process requirements and tailoring criteria is verified. The defined process is used as managed process to achieve the process outcomes.",
+                    "GP_key_obj": "Adapt the standard process for project use, Follow tailoring rules, Ensure compliance with organizational standards",
+                    "GP_user_docs_needed": "Process description, Tailoring documentation",
+                    "GP_rating_rules": {
+                            "N": [
+                                "Projects do not use the standard process.",
+                                "They create their own process or have no defined process."
+                            ],
+                            "P": [
+                                "The standard process is used as a reference, but tailoring is done without following the guidelines, or conformance is not verified.",
+                                "The resulting defined process has significant deviations."
+                            ],
+                            "L": [
+                                "A defined process is deployed by tailoring the standard process according to the guidelines.",
+                                "There might be minor, undocumented deviations or a lack of formal verification of conformance."
+                            ],
+                            "F": [
+                                "A defined process is deployed for the project by selecting and tailoring the standard process according to the defined tailoring guidelines, and its conformance is verified."
+                            ]
+                        }
+                },
+                {
+                    "GP_ID": "GP 3.2.2",
+                    "GP_title": "Ensure required competencies for the defined roles.",
+                    "GP_statement": "Human resources are allocated to the defined roles according to the required competencies and skills. Assignment of persons to roles and corresponding responsibilities and authorities for performing the defined process are communicated. Gaps in competencies and skills are identified, and corresponding qualification measures are initiated and monitored.",
+                    "GP_key_obj": "Staff projects with competent people, Communicate roles clearly, Identify and close skill gaps",
+                    "GP_user_docs_needed": "Role assignment",
+                    "GP_rating_rules": {
+                            "N": [
+                                "People are assigned to roles without considering their competencies.",
+                                "Skill gaps are not addressed."
+                            ],
+                            "P": [
+                                "People are assigned to roles, but a formal check against required competencies is not done.",
+                                "Skill gaps are identified but no action is taken to close them."
+                            ],
+                            "L": [
+                                "Human resources are allocated based on competency requirements.",
+                                "Skill gaps are identified and qualification measures are initiated, but the monitoring of their effectiveness might be weak."
+                            ],
+                            "F": [
+                                "People are allocated to the roles of the defined process based on a systematic check of their competencies. Any identified skill gaps are addressed through initiated and monitored qualification measures."
+                            ]
+                        }
+                },
+                {
+                    "GP_ID": "GP 3.2.3",
+                    "GP_title": "Ensure required resources to support the performance of the defined process.",
+                    "GP_statement": "Required information to perform the defined process is made available, allocated and used. Required physical and material resources, process infrastructure and work environment are made available, allocated and used. Availability and usage of resources are measured and monitored.",
+                    "GP_key_obj": "Provide necessary tools and environment for the project, Ensure information is available, Monitor resource usage",
+                    "GP_user_docs_needed": "Process resource and infrastructure documentation",
+                    "GP_rating_rules": {
+                            "N": [
+                                "The project lacks the necessary resources (tools, infrastructure) to perform the defined process."
+                            ],
+                            "P": [
+                                "Some required resources are provided, but there are significant gaps, or their availability is not monitored.",
+                                "This impedes the performance of the process."
+                            ],
+                            "L": [
+                                "The required resources and information are made available and allocated.",
+                                "Monitoring of availability and usage is informal or inconsistent."
+                            ],
+                            "F": [
+                                "All required resources (information, tools, infrastructure, work environment) as specified by the defined process are made available, allocated, and used. Their availability and usage are monitored."
+                            ]
+                        }
+                },
+                {
+                    "GP_ID": "GP 3.2.4",
+                    "GP_title": "Monitor the performance of the defined process.",
+                    "GP_statement": "Information is collected and analyzed according to the determined process monitoring methods to understand the effectiveness and adequacy of the defined process. Results of the analysis are made available to all effected parties and used to identify where continual improvement of the standard and/or defined process can be made.",
+                    "GP_key_obj": "Collect data on process performance, Analyze data to understand effectiveness, Provide feedback for process improvement",
+                    "GP_user_docs_needed": "Process performance information",
+                    "GP_rating_rules": {
+                            "N": [
+                                "No information about the performance of the defined process is collected."
+                            ],
+                            "P": [
+                                "Some data is collected, but it is not analyzed, or the results are not used to provide feedback for improvement."
+                            ],
+                            "L": [
+                                "Information on process performance is collected and analyzed according to the standard monitoring methods.",
+                                "The results are made available, but the process for feeding this back into the improvement of the standard process is informal."
+                            ],
+                            "F": [
+                                "Information about the performance of the defined process is collected and analyzed according to the standard methods. The results are used to understand process effectiveness and provide documented feedback for the continual improvement of the standard process."
+                            ]
+                        }
+                }
+            ]
+        },
+        "4": {
+            "PA_name": "Predictable process",
+            "PA_ID": "PA 4.1 and PA 4.2",
+            "GenericPractices": [
+                {
+                    "GP_ID": "GP 4.1.1",
+                    "GP_title": "Identify business goals.",
+                    "GP_statement": "Business goals are identified that are supported by the quantitatively measured process.",
+                    "GP_key_obj": "Link process performance to business outcomes, Justify quantitative management, Define top-level objectives",
+                    "GP_user_docs_needed": "Business goals",
+                    "GP_rating_rules": {
+                            "N": [
+                                "No business goals are identified in relation to the process."
+                            ],
+                            "P": [
+                                "Business goals are stated at a very high level (e.g., 'increase profit') but are not linked to the performance of the process being measured."
+                            ],
+                            "L": [
+                                "Relevant business goals are identified, but their connection to the process performance might be qualitative or not clearly defined."
+                            ],
+                            "F": [
+                                "Specific, relevant business goals (e.g., 'reduce warranty costs by 10%') are identified that are directly supported by the quantitative management of the process."
+                            ]
+                        }
+                },
+                {
+                    "GP_ID": "GP 4.1.2",
+                    "GP_title": "Establish process information needs.",
+                    "GP_statement": "Stakeholders of the identified business goals and the quantitatively measured process are identified, and their information needs are defined and agreed.",
+                    "GP_key_obj": "Determine what information stakeholders need, Translate business goals into information requirements, Align on measurement scope",
+                    "GP_user_docs_needed": "Business goals",
+                    "GP_rating_rules": {
+                            "N": [
+                                "Information needs are not defined."
+                            ],
+                            "P": [
+                                "Information needs are defined but are not linked to the business goals or agreed with stakeholders.",
+                                "This leads to collecting irrelevant data."
+                            ],
+                            "L": [
+                                "Information needs are defined based on business goals and agreed with key stakeholders.",
+                                "They might lack the detail needed to derive precise metrics."
+                            ],
+                            "F": [
+                                "The information needs of relevant stakeholders are clearly defined and agreed upon as a direct result of analyzing the identified business goals."
+                            ]
+                        }
+                },
+                {
+                    "GP_ID": "GP 4.1.3",
+                    "GP_title": "Identify measurable relationships between process elements.",
+                    "GP_statement": "Identify the relationships between process elements, or sets of process elements, which contribute to the process information needs.",
+                    "GP_key_obj": "Build a model of process performance, Understand cause-and-effect relationships, Identify what to measure",
+                    "GP_user_docs_needed": "Quantitative process metric",
+                    "GP_rating_rules": {
+                            "N": [
+                                "No attempt is made to understand how process elements relate to performance."
+                            ],
+                            "P": [
+                                "Some relationships are assumed but are not based on analysis or data.",
+                                "The model is informal or incorrect."
+                            ],
+                            "L": [
+                                "Key relationships between process elements (e.g., review effort and defect density) are identified to address the information needs.",
+                                "The model may be simplistic."
+                            ],
+                            "F": [
+                                "A model of process performance is developed by identifying the measurable relationships between process elements (activities, work products) that contribute to achieving the information needs."
+                            ]
+                        }
+                },
+                {
+                    "GP_ID": "GP 4.1.4",
+                    "GP_title": "Derive process measurement approach and select analysis techniques.",
+                    "GP_statement": "Based on the measurable relationships of process elements, or set of process elements, the process measurement metrics are derived to satisfy the established process information needs. Frequency of data collection is defined. Select analysis techniques, appropriate to collected data. Algorithms and methods to create derived measurement results from base measures are defined, as appropriate. Verification mechanism for base and derived measures is defined.",
+                    "GP_key_obj": "Define specific metrics, Plan data collection, Choose appropriate statistical methods, Ensure data quality",
+                    "GP_user_docs_needed": "Quantitative process metric, Process analysis techniques",
+                    "GP_rating_rules": {
+                            "N": [
+                                "No metrics or analysis techniques are defined."
+                            ],
+                            "P": [
+                                "Metrics are defined but do not align with the information needs.",
+                                "Data collection frequency is not defined, and analysis techniques are inappropriate for the data type."
+                            ],
+                            "L": [
+                                "Appropriate metrics, collection frequencies, and analysis techniques are defined.",
+                                "The definition of derived metrics or data verification mechanisms may be weak."
+                            ],
+                            "F": [
+                                "A comprehensive measurement approach is derived, defining specific metrics, data collection frequency, analysis techniques (e.g., control charts), algorithms for derived measures, and data verification mechanisms."
+                            ]
+                        }
+                },
+                {
+                    "GP_ID": "GP 4.1.5",
+                    "GP_title": "Establish quantitative control limits.",
+                    "GP_statement": "Establish quantitative control limits for the derived metrics. Agreement with process stakeholders is established.",
+                    "GP_key_obj": "Define the range of expected performance, Differentiate between normal and special cause variation, Set thresholds for action",
+                    "GP_user_docs_needed": "Process control limits",
+                    "GP_rating_rules": {
+                            "N": [
+                                "No control limits are established."
+                            ],
+                            "P": [
+                                "Control limits are set arbitrarily without being based on historical data or statistical analysis.",
+                                "They are not agreed with stakeholders."
+                            ],
+                            "L": [
+                                "Control limits are established for the key metrics, but they may be based on limited data or not be statistically robust."
+                            ],
+                            "F": [
+                                "Quantitative control limits for the defined metrics are established using statistical analysis of historical performance data and are agreed with the relevant process stakeholders."
+                            ]
+                        }
+                },
+                {
+                    "GP_ID": "GP 4.1.6",
+                    "GP_title": "Collect product and process measurement results through performing the defined process.",
+                    "GP_statement": "Data collection mechanisms are created for all identified metrics. Required data is collected across process instances of within the defined frequency and recorded. Measurement results are analyzed and reported to the identified stakeholders.",
+                    "GP_key_obj": "Execute the measurement plan, Gather and validate data, Analyze and report results",
+                    "GP_user_docs_needed": "Process measurement data",
+                    "GP_rating_rules": {
+                            "N": [
+                                "Data is not collected."
+                            ],
+                            "P": [
+                                "Data collection is inconsistent, incomplete, or not done at the defined frequency.",
+                                "Analysis and reporting do not occur."
+                            ],
+                            "L": [
+                                "Data is collected and recorded for the defined metrics.",
+                                "Analysis and reporting are performed, but may be delayed or not reach all identified stakeholders."
+                            ],
+                            "F": [
+                                "Data for all identified metrics is systematically collected from process instances at the defined frequency using established mechanisms. The data is validated, analyzed, and the results are reported to stakeholders."
+                            ]
+                        }
+                },
+                {
+                    "GP_ID": "GP 4.2.1",
+                    "GP_title": "Identify variations in process performance.",
+                    "GP_statement": "Deviations in the performance of process instances from the established quantitative control limits are determined based on the collected quantitative measurement data.",
+                    "GP_key_obj": "Monitor process stability, Detect outliers and deviations, Use control limits to identify special causes",
+                    "GP_user_docs_needed": "Quantitative process analysis results",
+                    "GP_rating_rules": {
+                            "N": [
+                                "Collected data is not compared against control limits."
+                            ],
+                            "P": [
+                                "Data is compared to limits, but the identification of variations is not systematic, and special causes are not distinguished from common causes."
+                            ],
+                            "L": [
+                                "Deviations from control limits are determined from the collected data, identifying most instances of special cause variation."
+                            ],
+                            "F": [
+                                "The collected quantitative data is continuously analyzed to determine any deviations of process performance from the established quantitative control limits (i.e., identifying special causes of variation)."
+                            ]
+                        }
+                },
+                {
+                    "GP_ID": "GP 4.2.2",
+                    "GP_title": "Identify causes of variation.",
+                    "GP_statement": "The determined deviations in process performance are analyzed to identify potential cause(s) of variation using the defined analysis techniques. Distributions are used to quantitatively understand the variation of process performance under the influence of potential causes of variation. Consequences of process variation are analyzed.",
+                    "GP_key_obj": "Perform root cause analysis on deviations, Understand the impact of special causes, Use statistical analysis to find causes",
+                    "GP_user_docs_needed": "Quantitative process analysis results",
+                    "GP_rating_rules": {
+                            "N": [
+                                "No analysis is done to understand the causes of variation."
+                            ],
+                            "P": [
+                                "Causes are guessed at without a structured analysis.",
+                                "The consequences are not understood."
+                            ],
+                            "L": [
+                                "Deviations are analyzed to identify their likely causes.",
+                                "The analysis may be more qualitative than quantitative, and the use of statistical techniques is limited."
+                            ],
+                            "F": [
+                                "The identified special causes of variation are analyzed using appropriate techniques (e.g., root cause analysis, statistical analysis) to determine their cause and quantitatively understand their consequences."
+                            ]
+                        }
+                },
+                {
+                    "GP_ID": "GP 4.2.3",
+                    "GP_title": "Identify and implement corrective actions to address assignable causes.",
+                    "GP_statement": "Results are provided to those responsible for taking action. Corrective actions are determined and implemented to address each assignable cause of variation. Corrective action results are monitored and evaluated to determine their effectiveness.",
+                    "GP_key_obj": "Eliminate special causes of variation, Stabilize the process, Verify the effectiveness of actions",
+                    "GP_user_docs_needed": "Measures against deviations in quantitative process analysis, Quantitative process analysis results",
+                    "GP_rating_rules": {
+                            "N": [
+                                "No corrective actions are taken to address assignable causes."
+                            ],
+                            "P": [
+                                "Corrective actions are identified but not implemented, or their effectiveness is not monitored."
+                            ],
+                            "L": [
+                                "Corrective actions are determined and implemented for most assignable causes.",
+                                "The evaluation of their effectiveness might be informal."
+                            ],
+                            "F": [
+                                "Corrective actions are determined and implemented to address each identified assignable cause of variation. The results of these actions are monitored and evaluated to confirm their effectiveness in stabilizing the process."
+                            ]
+                        }
+                }
+            ]
+        },
+        "5": {
+            "PA_name": "Innovating process",
+            "PA_ID": "PA 5.1 and PA 5.2",
+            "GenericPractices": [
+                {
+                    "GP_ID": "GP 5.1.1",
+                    "GP_title": "Define the process innovation objectives for the process that support the relevant business goals.",
+                    "GP_statement": "New business visions and goals are analyzed to give guidance for new process objectives and potential areas of process innovation. Quantitative and qualitative process innovation objectives are defined and documented.",
+                    "GP_key_obj": "Set goals for breakthrough improvements, Align innovation with business strategy, Look beyond stabilization",
+                    "GP_user_docs_needed": "Improvement opportunity",
+                    "GP_rating_rules": {
+                            "N": [
+                                "There are no objectives for process innovation."
+                            ],
+                            "P": [
+                                "Vague innovation goals exist (e.g., 'be more efficient') but are not linked to business goals or defined in measurable terms."
+                            ],
+                            "L": [
+                                "Process innovation objectives are defined and support business goals, but they may be more qualitative than quantitative."
+                            ],
+                            "F": [
+                                "Clear quantitative and qualitative process innovation objectives are defined and documented, derived from an analysis of new business visions and goals."
+                            ]
+                        }
+                },
+                {
+                    "GP_ID": "GP 5.1.2",
+                    "GP_title": "Analyze quantitative data of the process.",
+                    "GP_statement": "Common causes of variation in process performance across process instances are identified and analyzed to get a quantitative understanding of their impact.",
+                    "GP_key_obj": "Understand inherent process limitations, Analyze common cause variation, Identify opportunities to shift the mean",
+                    "GP_user_docs_needed": "Common cause of variation analysis results",
+                    "GP_rating_rules": {
+                            "N": [
+                                "Quantitative data is not analyzed for common causes of variation."
+                            ],
+                            "P": [
+                                "Analysis is performed, but fails to distinguish common cause from special cause variation, or does not quantify the impact."
+                            ],
+                            "L": [
+                                "Common causes of variation are identified and analyzed.",
+                                "The quantitative understanding of their impact may be limited."
+                            ],
+                            "F": [
+                                "The predictable performance of the process is analyzed to identify and quantitatively understand the impact of the common causes of variation."
+                            ]
+                        }
+                },
+                {
+                    "GP_ID": "GP 5.1.3",
+                    "GP_title": "Identify innovation opportunities.",
+                    "GP_statement": "Identify opportunities for innovation based on the quantitative understanding of the analyzed data. Industry best practices, new technologies and process concepts are identified and evaluated. Feedback on opportunities for innovation is actively sought. Emergent risks are considered in evaluating improvement opportunities.",
+                    "GP_key_obj": "Seek breakthrough changes, Investigate new technologies and methods, Go beyond incremental improvement",
+                    "GP_user_docs_needed": "Improvement opportunity",
+                    "GP_rating_rules": {
+                            "N": [
+                                "No innovation opportunities are sought or identified."
+                            ],
+                            "P": [
+                                "Innovation is considered, but the identification of opportunities is ad-hoc and not based on data analysis or investigation of new technologies."
+                            ],
+                            "L": [
+                                "Opportunities for innovation are identified based on data analysis and some investigation of new concepts.",
+                                "The process may not be systematic."
+                            ],
+                            "F": [
+                                "Opportunities for process innovation are systematically identified based on quantitative analysis of common cause variation, evaluation of new technologies and best practices, and active solicitation of feedback."
+                            ]
+                        }
+                },
+                {
+                    "GP_ID": "GP 5.2.1",
+                    "GP_title": "Define and assess the impact of proposed changes.",
+                    "GP_statement": "Specified changes are assessed against product quality and process performance requirements and goals. Impact of changes to other defined and standard processes is considered. Objective priorities for process innovation are established. Commitment to innovation is demonstrated by organizational management including other relevant stakeholders.",
+                    "GP_key_obj": "Evaluate potential innovations, Analyze impact on quality and performance, Secure management commitment",
+                    "GP_user_docs_needed": "Improvement evaluation results",
+                    "GP_rating_rules": {
+                            "N": [
+                                "Proposed changes are not assessed before implementation."
+                            ],
+                            "P": [
+                                "Changes are assessed, but the impact analysis is superficial, and management commitment is not secured."
+                            ],
+                            "L": [
+                                "Proposed innovations are assessed against performance goals, and priorities are established.",
+                                "The impact analysis on other processes might be incomplete."
+                            ],
+                            "F": [
+                                "All proposed process innovations are thoroughly assessed for their impact on quality and performance goals, as well as their impact on other processes. Priorities are set objectively, and management commitment is secured."
+                            ]
+                        }
+                },
+                {
+                    "GP_ID": "GP 5.2.2",
+                    "GP_title": "Implement agreed process changes.",
+                    "GP_statement": "A mechanism is established for incorporating accepted changes into the defined and standard process(es) effectively and completely. Process changes are implemented and effectively communicated to all affected parties.",
+                    "GP_key_obj": "Deploy innovations organization-wide, Update standard processes, Manage the rollout of changes",
+                    "GP_user_docs_needed": "Measures against deviations in quantitative process analysis",
+                    "GP_rating_rules": {
+                            "N": [
+                                "Agreed changes are not implemented."
+                            ],
+                            "P": [
+                                "Implementation is attempted but is incomplete or ineffective.",
+                                "Changes are not incorporated into the standard process, and communication is poor."
+                            ],
+                            "L": [
+                                "A mechanism for implementation exists, and agreed changes are deployed.",
+                                "The incorporation into the standard process or communication to all parties may have some weaknesses."
+                            ],
+                            "F": [
+                                "A mechanism is used to effectively and completely incorporate agreed innovations into the standard process(es). The changes are implemented and communicated to all affected parties."
+                            ]
+                        }
+                },
+                {
+                    "GP_ID": "GP 5.2.3",
+                    "GP_title": "Evaluate the effectiveness of process change.",
+                    "GP_statement": "Performance and capability of the changed process are measured and compared with historical data. Performance and capability of the changed process are analyzed to determine whether the process performance has improved with respect to common causes of variations. Other feedback is recorded, such as opportunities for further innovation of the standard process. A mechanism is available for documenting and reporting analysis results to stakeholders of standard and defined process.",
+                    "GP_key_obj": "Verify that innovations worked, Measure the improvement, Learn from the innovation cycle",
+                    "GP_user_docs_needed": "Improvement evaluation results, Measures against deviations in quantitative process analysis",
+                    "GP_rating_rules": {
+                            "N": [
+                                "The effectiveness of the implemented innovation is not evaluated."
+                            ],
+                            "P": [
+                                "Evaluation is based on subjective opinion rather than measurement.",
+                                "Results are not compared to historical data."
+                            ],
+                            "L": [
+                                "The performance of the changed process is measured and evaluated to determine if improvement occurred.",
+                                "The analysis may not be statistically rigorous or fully documented."
+                            ],
+                            "F": [
+                                "The effectiveness of the process innovation is evaluated by measuring the performance and capability of the changed process and comparing it with historical data to confirm that common cause variation has been favorably impacted. Results are documented and reported."
+                            ]
+                        }
+                }
+            ]
+        }
+    }
+}
