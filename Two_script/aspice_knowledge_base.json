@@ -36,7 +36,7 @@
             {
                 "BP_ID": "SYS.1.BP2",
                 "BP_title": "Agree on requirements.",
-                "BP_statement": "Formalize the stakeholder\u2019s expectations and requests into requirements. Reach a common understanding of the set of stakeholder requirements among affected parties by obtaining an explicit agreement from all affected parties.",
+                "BP_statement": "Formalize the stakeholders expectations and requests into requirements. Reach a common understanding of the set of stakeholder requirements among affected parties by obtaining an explicit agreement from all affected parties.",
                 "BP_key_obj": "Formalize requirements, Achieve common understanding, Secure explicit agreement, Establish a baseline.",
                 "BP_user_docs_needed": "Stakeholder Requirements Specification (StRS) with status, Review Records, Approval Records or Sign-offs, Feasibility Study Results, Cost/Schedule Impact Analysis.",
                 "BP_rating_rules": {
@@ -142,8 +142,7 @@
                             "All relevant stakeholder requirements are clearly covered by one or more system requirements.",
                             "Each system requirement is unambiguous, verifiable, consistent, feasible, and complete.",
                             "Each system requirement is atomic (describes a single piece of functionality).",
-                            "All requirements are explicitly and correctly classified (e.g., Functional, Non-Functional, Safety) according to definitions in the RMP.",
-                            "Review records show that a formal quality check against defined characteristics was performed and issues were resolved."
+                            "All requirements are explicitly and correctly classified (e.g., Functional, Non-Functional, Safety) according to definitions in the RMP."
                         ],
                         "L": [
                             "The vast majority of stakeholder requirements are covered.",
@@ -774,7 +773,1111 @@
                     }
             }
         ],
-    "CapabilityLevel": {
+    "SWE.1":[
+        {
+            "BP_ID": "SWE.1.BP1",
+            "BP_title": "Specify software requirements",
+            "BP_statement": "Use the system requirements and the system architecture to identify and document the functional and non-functional requirements for the software according to defined characteristics for requirements.",
+            "BP_key_obj": "To ensure that all necessary software requirements are derived from system-level inputs, documented clearly, and possess defined quality characteristics (e.g., unambiguous, verifiable, consistent) to form a solid basis for software development.",
+            "BP_user_docs_needed": [
+                "Software Requirements Specification (SRS)",
+                "System Requirements Specification",
+                "System Architecture Document",
+                "Requirements Traceability Matrix",
+                "Review records for the SRS"
+            ],
+            "BP_rating_rules": {
+                "F": [
+                    "A version-controlled Software Requirements Specification (SRS) exists.",
+                    "All software-relevant requirements from the system requirements and system architecture are covered.",
+                    "Each software requirement is documented with defined characteristics (e.g., uniquely identified, verifiable, consistent, technically feasible).",
+                    "Functional and non-functional requirements are clearly distinguished.",
+                    "Verification criteria are defined for each requirement, enabling test case development.",
+                    "Evidence of formal review and approval exists, and all identified issues are resolved."
+                ],
+                "L": [
+                    "An SRS exists and the vast majority of system-level inputs are covered.",
+                    "Most requirements meet the defined characteristics, but a few minor issues exist (e.g., slight ambiguity, minor inconsistencies) that do not hinder development.",
+                    "Verification criteria are present for most requirements but might lack detail in some cases.",
+                    "The SRS is a reliable basis for software design, with only minor clarifications needed."
+                ],
+                "P": [
+                    "An SRS exists, but it has significant gaps in coverage from system requirements or architecture.",
+                    "A significant number of requirements are of poor quality (e.g., ambiguous, non-verifiable, contradictory).",
+                    "Verification criteria are frequently missing or inadequate.",
+                    "The document requires substantial rework before it can be reliably used for design."
+                ],
+                "N": [
+                    "No SRS document exists.",
+                    "The SRS is merely a copy of system requirements without any software-specific analysis or refinement.",
+                    "The document is so incomplete or of such poor quality that it provides no value to the development process."
+                ]
+            }
+        },
+        {
+            "BP_ID": "SWE.1.BP2",
+            "BP_title": "Structure software requirements",
+            "BP_statement": "Structure and prioritize the software requirements.",
+            "BP_key_obj": "To organize software requirements in a logical and manageable way (e.g., by feature, component) and to assign priorities to guide development, testing, and release planning.",
+            "BP_user_docs_needed": [
+                "Software Requirements Specification (SRS) with attributes for structure and priority",
+                "Release Plan",
+                "Project Management Plan"
+            ],
+            "BP_rating_rules": {
+                "F": [
+                    "Software requirements are systematically grouped or structured according to defined criteria (e.g., by feature, functionality, product variant).",
+                    "Each requirement has a defined priority that is aligned with project and stakeholder needs (e.g., release scope).",
+                    "The rationale for the structure and prioritization is documented and understood by the team."
+                ],
+                "L": [
+                    "Most requirements are structured and prioritized.",
+                    "The structuring scheme is mostly consistent, with a few minor exceptions.",
+                    "Prioritization is generally clear but may require minor clarification for a small subset of requirements."
+                ],
+                "P": [
+                    "A structure exists but is inconsistently applied or illogical.",
+                    "Prioritization is missing for many requirements or is not based on clear criteria.",
+                    "The organization of requirements is confusing and hinders efficient development and planning."
+                ],
+                "N": [
+                    "No attempt has been made to structure or prioritize the requirements.",
+                    "The requirements are presented as a simple, unorganized list."
+                ]
+            }
+        },
+        {
+            "BP_ID": "SWE.1.BP3",
+            "BP_title": "Analyze software requirements",
+            "BP_statement": "Analyze the specified software requirements including their interdependencies to ensure correctness, technical feasibility, and to support project management regarding project estimates.",
+            "BP_key_obj": "To critically evaluate software requirements for potential issues like conflicts, technical impossibilities, and risks, and to use this analysis to create reliable project estimates.",
+            "BP_user_docs_needed": [
+                "Analysis Results (e.g., review protocols, feasibility studies, prototypes)",
+                "Software Requirements Specification (SRS)",
+                "Project estimates (effort, cost, schedule)",
+                "Risk Management Plan"
+            ],
+            "BP_rating_rules": {
+                "F": [
+                    "There is documented evidence of analysis for correctness, technical feasibility, and interdependencies.",
+                    "Analysis methods (e.g., reviews, prototyping, simulation) are appropriate and systematically applied.",
+                    "Issues found during analysis are tracked to resolution.",
+                    "The results of the analysis are used as a documented basis for project estimates (effort, schedule).",
+                    "Potential risks related to requirements are identified."
+                ],
+                "L": [
+                    "Most requirements have been analyzed, but the analysis of interdependencies might be superficial in some areas.",
+                    "Technical feasibility is confirmed for all critical requirements.",
+                    "Estimates are largely based on the analysis, but the link may not be formally documented for all tasks."
+                ],
+                "P": [
+                    "Analysis is performed sporadically or only for a subset of requirements.",
+                    "There is no evidence of analysis for interdependencies or technical feasibility.",
+                    "Project estimates are created without a clear, analytical basis derived from the requirements."
+                ],
+                "N": [
+                    "No evidence of any analysis of the software requirements exists.",
+                    "Requirements are accepted without evaluating their feasibility or impact."
+                ]
+            }
+        },
+        {
+            "BP_ID": "SWE.1.BP4",
+            "BP_title": "Analyze the impact on the operating environment",
+            "BP_statement": "Analyze the impact that the software requirements will have on elements in the operating environment.",
+            "BP_key_obj": "To ensure that the effects of the software on the system's hardware, other software components, and external systems are understood, documented, and accounted for.",
+            "BP_user_docs_needed": [
+                "Analysis Results",
+                "Hardware-Software Interface (HSI) Specification",
+                "System Architecture Document"
+            ],
+            "BP_rating_rules": {
+                "F": [
+                    "A systematic analysis of the impact on the operating environment (e.g., memory usage, CPU load, network bandwidth, hardware interfaces) is documented.",
+                    "The analysis covers all relevant software requirements.",
+                    "The results are used to refine requirements, system architecture, or hardware specifications."
+                ],
+                "L": [
+                    "An impact analysis was performed, covering the most critical requirements and environmental aspects.",
+                    "Some less critical impacts may not be fully documented, but the overall system behavior is understood."
+                ],
+                "P": [
+                    "The analysis is incomplete, missing major environmental factors or requirements.",
+                    "The analysis is superficial and does not provide enough detail to identify potential problems."
+                ],
+                "N": [
+                    "No analysis of the impact on the operating environment was performed."
+                ]
+            }
+        },
+        {
+            "BP_ID": "SWE.1.BP5",
+            "BP_title": "Ensure consistency and establish bidirectional traceability",
+            "BP_statement": "Ensure consistency and establish bidirectional traceability between software requirements and system architecture. Ensure consistency and establish bidirectional traceability between software requirements and system requirements.",
+            "BP_key_obj": "To create and maintain links between software requirements and their sources (system requirements, system architecture) to ensure that nothing is missed (completeness), nothing extra is added without reason (gold plating), and impacts of changes can be effectively managed.",
+            "BP_user_docs_needed": [
+                "Consistency Evidence (e.g., traceability matrix, review records)",
+                "Software Requirements Specification (SRS)",
+                "System Requirements Specification",
+                "System Architecture Document"
+            ],
+            "BP_rating_rules": {
+                "F": [
+                    "Complete bidirectional traceability is established and maintained between each software requirement and its parent system requirement(s) and system architecture element(s).",
+                    "A consistency check has been performed to ensure traced items are compatible and not contradictory.",
+                    "The traceability data is up-to-date and reflects the current state of the documents.",
+                    "Tools are used effectively to manage traceability links."
+                ],
+                "L": [
+                    "Traceability is largely complete, with only a few minor gaps or outdated links for non-critical items.",
+                    "Consistency has been checked, and no major inconsistencies exist.",
+                    "The traceability is sufficient for effective impact analysis of most changes."
+                ],
+                "P": [
+                    "Significant gaps exist in the traceability (e.g., many requirements are not traced).",
+                    "Traceability is only unidirectional, or links are frequently outdated or incorrect.",
+                    "No evidence of a consistency check is available.",
+                    "Impact analysis is difficult or unreliable due to the poor state of traceability."
+                ],
+                "N": [
+                    "No traceability exists.",
+                    "The concept of linking requirements to their source is not implemented."
+                ]
+            }
+        },
+        {
+            "BP_ID": "SWE.1.BP6",
+            "BP_title": "Communicate agreed software requirements and impact on the operating environment",
+            "BP_statement": "Communicate the agreed software requirements, and the results of the analysis of impact on the operating environment, to all affected parties.",
+            "BP_key_obj": "To ensure that all stakeholders (e.g., developers, testers, project managers) have access to and are working from the same approved version of the software requirements and understand their implications.",
+            "BP_user_docs_needed": [
+                "Communication Evidence (e.g., meeting minutes, email distributions, release notes for documents)",
+                "Software Requirements Specification (formally released/baselined)",
+                "List of affected parties"
+            ],
+            "BP_rating_rules": {
+                "F": [
+                    "A mechanism for communicating agreed requirements is defined and consistently used.",
+                    "There is clear evidence (e.g., distribution lists, meeting records, notifications from a tool) that all affected parties have received the agreed-upon requirements and analysis results.",
+                    "The communicated requirements are clearly identified as the official, approved baseline."
+                ],
+                "L": [
+                    "Communication occurs, and all key stakeholders have received the information.",
+                    "The process might be slightly informal, or evidence may not be perfectly logged, but the intended recipients are verifiably informed."
+                ],
+                "P": [
+                    "Communication is ad-hoc and inconsistent.",
+                    "Some affected parties are not informed, leading to teams working with outdated or incorrect information.",
+                    "It is unclear which version of the requirements is the official one."
+                ],
+                "N": [
+                    "No communication of agreed requirements takes place.",
+                    "Documents are finalized but not distributed to the teams that need them."
+                ]
+            }
+        }
+    ],
+    "SWE.2":[
+        {
+            "BP_ID": "SWE.2.BP1",
+            "BP_title": "Specify static aspects of the software architecture",
+            "BP_statement": "Specify and document the static aspects of the software architecture with respect to the functional and non-functional software requirements, including external interfaces and a defined set of software components with their interfaces and relationships.",
+            "BP_key_obj": "To define and document the structural blueprint of the software, identifying its main building blocks (components), their responsibilities, how they are connected (interfaces), and how they relate to each other.",
+            "BP_user_docs_needed": [
+                "Software Architecture Document",
+                "Software Requirements Specification (SRS)",
+                "Interface specification documents"
+            ],
+            "BP_rating_rules": {
+                "F": [
+                    "A software architecture document exists and is under version control.",
+                    "The software is decomposed into a set of software components.",
+                    "For each component, its responsibilities are defined.",
+                    "Interfaces between components and to the external environment are specified, including data types and protocols.",
+                    "The relationships between components (e.g., dependencies, hierarchy) are clearly documented.",
+                    "The design fulfills the relevant functional and non-functional software requirements."
+                ],
+                "L": [
+                    "The static architecture is well-documented, covering all major components and interfaces.",
+                    "Some minor details in interface specifications or component relationships might be missing but can be easily inferred and do not block development."
+                ],
+                "P": [
+                    "The architecture document is incomplete; major components or interfaces are missing or poorly defined.",
+                    "The decomposition is illogical or does not adequately address the software requirements.",
+                    "The document is not a sufficient guide for detailed design."
+                ],
+                "N": [
+                    "No software architecture document or static design exists.",
+                    "The design is just a 'box diagram' with no detail on interfaces or component responsibilities."
+                ]
+            }
+        },
+        {
+            "BP_ID": "SWE.2.BP2",
+            "BP_title": "Specify dynamic aspects of the software architecture",
+            "BP_statement": "Specify and document the dynamic aspects of the software architecture with respect to the functional and non-functional software requirements, including the behavior of the software components and their interaction in different software modes, and concurrency aspects.",
+            "BP_key_obj": "To describe how the software components work together over time to achieve the system's functions, including handling sequences of events, managing different operational modes, and dealing with concurrent activities.",
+            "BP_user_docs_needed": [
+                "Software Architecture Document (containing dynamic views)",
+                "Sequence diagrams, state charts, or other behavioral models",
+                "Software Requirements Specification (SRS)"
+            ],
+            "BP_rating_rules": {
+                "F": [
+                    "The dynamic behavior of the software is documented using appropriate methods (e.g., sequence diagrams, state machines, timing diagrams).",
+                    "The documentation covers interactions between software components for key scenarios.",
+                    "Different software modes (e.g., startup, normal operation, shutdown, fault) and the transitions between them are described.",
+                    "Concurrency aspects (e.g., task scheduling, interrupt handling, resource sharing) are specified."
+                ],
+                "L": [
+                    "The main dynamic behaviors are documented, and key interactions are clear.",
+                    "Descriptions of some secondary scenarios or error conditions might be less detailed, but the core functionality is covered.",
+                    "Concurrency is addressed, but some details about resource locking or priority inversion might be implicit."
+                ],
+                "P": [
+                    "Dynamic aspects are only superficially described or are missing for critical parts of the system.",
+                    "Concurrency aspects are not considered, posing a risk of race conditions or deadlocks.",
+                    "The documentation fails to explain how components interact to fulfill major use cases."
+                ],
+                "N": [
+                    "No documentation of dynamic aspects exists.",
+                    "The architecture only describes what the components are, not what they do or how they interact."
+                ]
+            }
+        },
+        {
+            "BP_ID": "SWE.2.BP3",
+            "BP_title": "Analyze software architecture",
+            "BP_statement": "Analyze the software architecture regarding relevant technical design aspects and to support project management regarding project estimates. Document a rationale for the software architectural design decision.",
+            "BP_key_obj": "To ensure the proposed architecture is fit for purpose by evaluating it against key quality attributes (e.g., performance, resource usage, maintainability) and to justify why specific design choices were made.",
+            "BP_user_docs_needed": [
+                "Analysis Results (e.g., trade-off studies, simulation results, resource calculations)",
+                "Software Architecture Document (including design rationale)",
+                "Project estimates"
+            ],
+            "BP_rating_rules": {
+                "F": [
+                    "There is documented evidence of analysis against technical aspects like timing, resource consumption (RAM/ROM), and feasibility.",
+                    "The analysis methods used (e.g., prototyping, simulation, qualitative analysis) are appropriate.",
+                    "A clear rationale for significant architectural decisions is documented (e.g., make vs. buy, pattern selection).",
+                    "The results of the analysis are used to refine project estimates."
+                ],
+                "L": [
+                    "The architecture has been analyzed for the most critical technical aspects.",
+                    "The rationale for major decisions is documented, although justification for minor decisions may be missing.",
+                    "The analysis is sufficient to have confidence in the architecture's viability."
+                ],
+                "P": [
+                    "Analysis is missing for key non-functional requirements (e.g., performance is required but no analysis was done).",
+                    "No rationale is documented, making the design choices seem arbitrary.",
+                    "Project estimates do not appear to be based on any architectural analysis."
+                ],
+                "N": [
+                    "No analysis of the software architecture has been performed.",
+                    "The design has been created without evaluation or justification."
+                ]
+            }
+        },
+        {
+            "BP_ID": "SWE.2.BP4",
+            "BP_title": "Ensure consistency and establish bidirectional traceability",
+            "BP_statement": "Ensure consistency and establish bidirectional traceability between the software architecture and the software requirements.",
+            "BP_key_obj": "To link architectural elements to the software requirements they are designed to satisfy, ensuring every requirement is addressed by the architecture and every part of the architecture exists for a reason.",
+            "BP_user_docs_needed": [
+                "Consistency Evidence (e.g., traceability matrix, review records)",
+                "Software Architecture Document",
+                "Software Requirements Specification (SRS)"
+            ],
+            "BP_rating_rules": {
+                "F": [
+                    "Complete bidirectional traceability is established between software architecture components/interfaces and the software requirements.",
+                    "A consistency check has been performed to ensure the architecture correctly implements the intent of the traced requirements.",
+                    "Traceability is up-to-date and used for impact analysis.",
+                    "Unallocated requirements are identified and handled."
+                ],
+                "L": [
+                    "Traceability is largely complete, with only minor gaps for non-critical requirements.",
+                    "No major inconsistencies exist between the architecture and the requirements.",
+                    "The traceability is mostly reliable for impact analysis."
+                ],
+                "P": [
+                    "Significant gaps exist in the traceability; many requirements are not linked to the architecture, or vice versa.",
+                    "Traceability is outdated or incorrect.",
+                    "The architecture is visibly inconsistent with the requirements (e.g., a required interface is missing)."
+                ],
+                "N": [
+                    "No traceability between architecture and requirements exists."
+                ]
+            }
+        },
+        {
+            "BP_ID": "SWE.2.BP5",
+            "BP_title": "Communicate agreed software architecture",
+            "BP_statement": "Communicate the agreed software architecture to all affected parties.",
+            "BP_key_obj": "To ensure that all relevant teams (e.g., detailed designers, component developers, integrators, testers) are working from the same approved architectural design.",
+            "BP_user_docs_needed": [
+                "Communication Evidence (e.g., meeting minutes, email distributions, release notes)",
+                "Software Architecture Document (formally released/baselined)",
+                "List of affected parties"
+            ],
+            "BP_rating_rules": {
+                "F": [
+                    "A mechanism for communicating the agreed architecture is defined and consistently used.",
+                    "There is clear evidence that all affected parties have received the agreed-upon architecture.",
+                    "The communicated architecture is clearly identified as the official, approved baseline for development."
+                ],
+                "L": [
+                    "Communication occurs, and all key stakeholders have received the architecture document.",
+                    "The process might be slightly informal, but the intended recipients are verifiably informed and using the correct version."
+                ],
+                "P": [
+                    "Communication is ad-hoc, and some teams are not informed.",
+                    "It is unclear which version of the architecture is the official one, leading to potential integration problems."
+                ],
+                "N": [
+                    "No communication of the agreed architecture takes place.",
+                    "The architecture document is not distributed to the teams that need it for their work."
+                ]
+            }
+        }
+    ],
+    "SWE.3":[
+        {
+            "BP_ID": "SWE.3.BP1",
+            "BP_title": "Specify the static aspects of the detailed design",
+            "BP_statement": "For each software component specify the behavior of its software units, their static structure and relationships, their interfaces including valid data value ranges for inputs and outputs (from the application domain perspective), and physical or measurement units applicable to inputs and outputs (from the application domain perspective).",
+            "BP_key_obj": "To break down architectural components into smaller, implementable units (e.g., functions, classes), and precisely define their structure, interfaces, and data handling, including physical units and ranges.",
+            "BP_user_docs_needed": [
+                "Software Detailed Design Document",
+                "Software Architecture Document",
+                "Interface specifications for software units"
+            ],
+            "BP_rating_rules": {
+                "F": [
+                    "A software detailed design (SDD) document exists for the software units within each component.",
+                    "The static structure, relationships, and interfaces of all software units are defined.",
+                    "Interfaces specifications include data types, valid value ranges (e.g., 0-100), and physical units (e.g., 'km/h', '%') where applicable.",
+                    "The detailed design is consistent with the software architecture."
+                ],
+                "L": [
+                    "An SDD exists and covers the design for most units.",
+                    "Interface definitions are mostly complete, though some physical units or ranges for non-critical signals might be missing.",
+                    "The design is a solid basis for coding."
+                ],
+                "P": [
+                    "The SDD is incomplete, missing the design for significant software units.",
+                    "Interface definitions are frequently missing critical details like value ranges, making implementation ambiguous and error-prone.",
+                    "The design is inconsistent with the parent architecture."
+                ],
+                "N": [
+                    "No software detailed design exists.",
+                    "Developers proceed to code directly from the architecture without a detailed design step."
+                ]
+            }
+        },
+        {
+            "BP_ID": "SWE.3.BP2",
+            "BP_title": "Specify dynamic aspects of the detailed design",
+            "BP_statement": "Specify and document the dynamic aspects of the detailed design with respect to the software architecture, including the interactions between relevant software units to fulfill the component\u2019s dynamic behavior.",
+            "BP_key_obj": "To describe the internal logic and flow of control within a software component, showing how its constituent software units interact to produce the component's overall behavior.",
+            "BP_user_docs_needed": [
+                "Software Detailed Design Document (with dynamic views)",
+                "Sequence diagrams, activity diagrams, or pseudo-code describing internal logic",
+                "Software Architecture Document"
+            ],
+            "BP_rating_rules": {
+                "F": [
+                    "The dynamic behavior within components is documented (e.g., via pseudo-code, flowcharts, activity diagrams).",
+                    "The documentation clearly shows the sequence of operations and interactions between software units for important functions.",
+                    "The detailed dynamic behavior is consistent with the high-level dynamic behavior specified in the architecture."
+                ],
+                "L": [
+                    "The main algorithms and dynamic interactions are documented.",
+                    "Detailed error handling logic or behavior in edge cases may not be fully specified but the primary path is clear."
+                ],
+                "P": [
+                    "Dynamic behavior is only documented for a few units or is described in a vague, high-level way that does not add detail to the architecture.",
+                    "The internal logic of complex components is not explained."
+                ],
+                "N": [
+                    "No description of the dynamic aspects of the detailed design exists."
+                ]
+            }
+        },
+        {
+            "BP_ID": "SWE.3.BP3",
+            "BP_title": "Develop software units",
+            "BP_statement": "Develop and document the software units consistent with the detailed design, and according to coding principles.",
+            "BP_key_obj": "To translate the detailed design of software units into actual source code that is well-documented, clean, and adheres to established coding standards.",
+            "BP_user_docs_needed": [
+                "Source code for software units",
+                "Software Detailed Design Document",
+                "Coding guidelines/standard",
+                "Code comments and documentation"
+            ],
+            "BP_rating_rules": {
+                "F": [
+                    "The source code for software units is implemented and complete.",
+                    "The implementation is demonstrably consistent with the software detailed design.",
+                    "Defined coding principles/guidelines (e.g., MISRA C, internal style guide) are systematically followed.",
+                    "The code is well-structured and documented with comments where necessary."
+                ],
+                "L": [
+                    "The source code is complete and largely follows the detailed design and coding guidelines.",
+                    "There may be minor, isolated deviations from the coding standard that do not affect functionality or maintainability."
+                ],
+                "P": [
+                    "The source code is inconsistent with the detailed design in significant ways.",
+                    "Coding guidelines are frequently violated.",
+                    "The code is poorly structured or lacks documentation, making it difficult to understand and maintain."
+                ],
+                "N": [
+                    "Software units have not been developed.",
+                    "The developed code bears no resemblance to the detailed design."
+                ]
+            }
+        },
+        {
+            "BP_ID": "SWE.3.BP4",
+            "BP_title": "Ensure consistency and establish bidirectional traceability",
+            "BP_statement": "Ensure consistency and establish bidirectional traceability between the software detailed design and the software architecture. Ensure consistency and establish bidirectional traceability between the developed software units and the software detailed design. Ensure consistency and establish traceability between the software detailed design and the software requirements.",
+            "BP_key_obj": "To create a complete and consistent chain of links from requirements to architecture to detailed design to code, ensuring full coverage and enabling robust impact analysis.",
+            "BP_user_docs_needed": [
+                "Consistency Evidence (e.g., traceability matrix, review records)",
+                "Software Requirements Specification (SRS)",
+                "Software Architecture Document",
+                "Software Detailed Design Document",
+                "Source Code (with traceability tags if applicable)"
+            ],
+            "BP_rating_rules": {
+                "F": [
+                    "Bidirectional traceability is established and maintained for: SDD <-> Architecture, Code <-> SDD, and SDD <-> SRS.",
+                    "The traceability links are complete, correct, and up-to-date.",
+                    "Consistency checks have been performed across all levels of abstraction.",
+                    "The traceability provides a clear path from a specific line of code back to the requirement it helps fulfill."
+                ],
+                "L": [
+                    "Traceability is largely complete and consistent across all required links.",
+                    "There may be a few minor gaps or outdated links, but the overall traceability is reliable for impact analysis and coverage checks."
+                ],
+                "P": [
+                    "Traceability is missing for one or more of the required links (e.g., no link from code to design).",
+                    "Significant gaps or errors exist in the traceability that is present.",
+                    "It is difficult or impossible to determine if the design and code fully cover the requirements."
+                ],
+                "N": [
+                    "No traceability has been established between design, code, architecture, or requirements."
+                ]
+            }
+        },
+        {
+            "BP_ID": "SWE.3.BP5",
+            "BP_title": "Communicate agreed software detailed design and developed software units",
+            "BP_statement": "Communicate the agreed software detailed design and developed software units to all affected parties.",
+            "BP_key_obj": "To ensure that relevant stakeholders (e.g., testers, integrators) have access to the approved detailed design and the corresponding source code for their work.",
+            "BP_user_docs_needed": [
+                "Communication Evidence (e.g., check-in notifications, release notes)",
+                "Software Detailed Design Document (formally released/baselined)",
+                "Version control system logs for source code check-ins"
+            ],
+            "BP_rating_rules": {
+                "F": [
+                    "A mechanism for communicating the agreed detailed design and making source code available is defined and used.",
+                    "There is clear evidence that affected parties have access to the approved SDD and the corresponding software units (e.g., via a version control system).",
+                    "It is clear which versions of the design and code are approved for use in integration and testing."
+                ],
+                "L": [
+                    "Communication occurs and the relevant artifacts are available to the team.",
+                    "The process might be slightly informal (e.g., relying on daily stand-ups and a well-maintained repository) but is effective in practice."
+                ],
+                "P": [
+                    "Communication is ad-hoc, and testers or integrators may be working with outdated design documents or code.",
+                    "It is difficult to find the correct version of the source code or design."
+                ],
+                "N": [
+                    "No communication takes place.",
+                    "The detailed design is not distributed, and code is not checked into a shared repository."
+                ]
+            }
+        }
+    ],
+    "SWE.4":[
+        {
+            "BP_ID": "SWE.4.BP1",
+            "BP_title": "Specify software unit verification measures",
+            "BP_statement": "Specify verification measures for each software unit defined in the software detailed design, including pass/fail criteria for verification measures, entry and exit criteria for verification measures, and the required verification infrastructure.",
+            "BP_key_obj": "To define a clear and comprehensive strategy for how each software unit will be verified, ensuring that the verification process is planned, repeatable, and has objective criteria for success.",
+            "BP_user_docs_needed": [
+                "Unit Verification Specification / Test Plan",
+                "Software Detailed Design Document",
+                "Static Analysis Ruleset/Configuration",
+                "Code Review Checklists"
+            ],
+            "BP_rating_rules": {
+                "F": [
+                    "A verification specification exists that defines the verification measures (e.g., static analysis, code review, unit tests) for software units.",
+                    "The specification is based on the software detailed design.",
+                    "Clear and unambiguous pass/fail criteria are defined for each verification measure.",
+                    "Entry/exit criteria for performing the verification are defined (e.g., code must compile without warnings).",
+                    "The required test environment/infrastructure is specified."
+                ],
+                "L": [
+                    "Verification measures are specified for almost all units.",
+                    "Pass/fail criteria are mostly clear, though some may require minor interpretation.",
+                    "The overall verification strategy is sound and covers the critical aspects of the units."
+                ],
+                "P": [
+                    "Verification measures are specified for only a subset of units.",
+                    "Pass/fail criteria are frequently missing, vague, or subjective (e.g., 'works as expected').",
+                    "The specification is insufficient to guide a systematic verification effort."
+                ],
+                "N": [
+                    "No specification of unit verification measures exists.",
+                    "Verification is unplanned and entirely ad-hoc."
+                ]
+            }
+        },
+        {
+            "BP_ID": "SWE.4.BP2",
+            "BP_title": "Select software unit verification measures",
+            "BP_statement": "Document the selection of verification measures considering selection criteria including criteria for regression verification. The documented selection of verification measures shall have sufficient coverage according to the release scope.",
+            "BP_key_obj": "To choose and justify the specific set of verification activities that will be performed for a given release, ensuring adequate testing coverage without unnecessary effort, and defining a strategy for re-testing after changes.",
+            "BP_user_docs_needed": [
+                "Verification Measure Selection Set (e.g., Test Suite for a release)",
+                "Unit Verification Specification / Test Plan",
+                "Release Plan",
+                "Change Requests / Impact Analysis for regression"
+            ],
+            "BP_rating_rules": {
+                "F": [
+                    "The selection of verification measures for the current release is documented.",
+                    "The selection provides sufficient coverage of the unit's requirements/design for the release scope.",
+                    "A clear strategy and criteria for regression verification are defined and applied (i.e., which tests to re-run when a change is made).",
+                    "The rationale for the selection is documented."
+                ],
+                "L": [
+                    "A selection of verification measures is performed and documented.",
+                    "The coverage is adequate for the release, though the formal documentation of the selection rationale may be sparse.",
+                    "Regression testing is performed, but the strategy might not be explicitly documented."
+                ],
+                "P": [
+                    "The selection of verification measures is not documented.",
+                    "There is no evidence of a regression strategy; either too much or too little is re-tested after changes.",
+                    "The coverage provided by the selected tests is insufficient for the release scope."
+                ],
+                "N": [
+                    "No selection of verification measures is performed.",
+                    "It is unclear which tests are run for any given release."
+                ]
+            }
+        },
+        {
+            "BP_ID": "SWE.4.BP3",
+            "BP_title": "Verify software units",
+            "BP_statement": "Perform software unit verification using the selected verification measures. Record the verification results including pass/fail status and corresponding verification measure data.",
+            "BP_key_obj": "To execute the planned verification activities (reviews, static analysis, tests) and to systematically capture the results to provide objective evidence of the unit's quality.",
+            "BP_user_docs_needed": [
+                "Verification Results (e.g., Unit Test Reports, Static Analysis Reports, Code Review Records)",
+                "Verification Measure Data (e.g., test logs, tool outputs)",
+                "Problem/Defect Reports"
+            ],
+            "BP_rating_rules": {
+                "F": [
+                    "The selected verification measures have been performed.",
+                    "Results are recorded for all executed measures.",
+                    "Each result includes a clear pass/fail status.",
+                    "The recorded data is sufficient to understand what was done and reproduce the result (e.g., tool version, inputs, outputs).",
+                    "Deviations from expected results are documented (e.g., in a defect tracking system)."
+                ],
+                "L": [
+                    "Verification has been performed for the vast majority of selected measures.",
+                    "Results are recorded with pass/fail status, but the supporting data might occasionally lack some detail.",
+                    "The overall status of the units is clear."
+                ],
+                "P": [
+                    "Verification is only partially performed.",
+                    "Results are not systematically recorded, or the pass/fail status is often missing.",
+                    "It is difficult to determine the quality and status of the software units based on the available records."
+                ],
+                "N": [
+                    "No verification of software units has been performed.",
+                    "No verification results are recorded."
+                ]
+            }
+        },
+        {
+            "BP_ID": "SWE.4.BP4",
+            "BP_title": "Ensure consistency and establish bidirectional traceability",
+            "BP_statement": "Ensure consistency and establish bidirectional traceability between verification measures and the software units defined in the detailed design. Establish bidirectional traceability between the verification results and the verification measures.",
+            "BP_key_obj": "To link tests to the design they verify, and test results to the tests that were executed, ensuring that all units are tested, all tests are run, and the origin of any failure can be quickly identified.",
+            "BP_user_docs_needed": [
+                "Consistency Evidence (e.g., traceability matrix)",
+                "Unit Verification Specification",
+                "Software Detailed Design Document",
+                "Verification Results"
+            ],
+            "BP_rating_rules": {
+                "F": [
+                    "Complete bidirectional traceability exists between unit verification measures and the software units in the detailed design.",
+                    "Complete bidirectional traceability exists between verification results and the corresponding verification measures.",
+                    "Consistency checks are performed to ensure tests are appropriate for the design.",
+                    "The traceability is up-to-date and allows for easy assessment of test coverage and result status."
+                ],
+                "L": [
+                    "Traceability is largely complete and consistent.",
+                    "There may be a few minor gaps or outdated links, but the relationship between design, tests, and results is clear.",
+                    "Coverage can be reliably assessed."
+                ],
+                "P": [
+                    "Significant gaps exist in the traceability (e.g., many test cases are not linked to the design).",
+                    "Test results are not linked back to the test cases, making it hard to manage re-testing.",
+                    "It is difficult to determine the test coverage of the detailed design."
+                ],
+                "N": [
+                    "No traceability exists between design, verification measures, and results."
+                ]
+            }
+        },
+        {
+            "BP_ID": "SWE.4.BP5",
+            "BP_title": "Summarize and communicate results",
+            "BP_statement": "Summarize the results of software unit verification and communicate them to all affected parties.",
+            "BP_key_obj": "To consolidate the detailed verification results into a concise summary that enables stakeholders (e.g., integrators, project managers) to understand the quality status of the software units and make informed decisions.",
+            "BP_user_docs_needed": [
+                "Communication Evidence (e.g., summary report, email)",
+                "Unit Verification Summary Report",
+                "Verification Results"
+            ],
+            "BP_rating_rules": {
+                "F": [
+                    "A summary of the unit verification results is created.",
+                    "The summary provides a clear overview of the status, including coverage metrics, number of passed/failed tests, and open defects.",
+                    "There is evidence that this summary has been communicated to all affected parties.",
+                    "The summary enables stakeholders to judge readiness for integration."
+                ],
+                "L": [
+                    "A summary of results is created and communicated.",
+                    "The summary may lack some formal metrics but still provides a clear picture of the verification status.",
+                    "All key stakeholders are informed."
+                ],
+                "P": [
+                    "Only raw test logs or results are communicated without any summary or interpretation.",
+                    "Communication is ad-hoc, or the summary is misleading or incomplete.",
+                    "It is not possible to get a clear picture of the unit verification status."
+                ],
+                "N": [
+                    "No summary is created or communicated.",
+                    "The status of unit verification is unknown to other teams."
+                ]
+            }
+        }
+    ],
+    "SWE.5":[
+        {
+            "BP_ID": "SWE.5.BP1",
+            "BP_title": "Specify software integration verification measures",
+            "BP_statement": "Specify verification measures, based on a defined sequence and preconditions for the integration of software elements, against the defined static and dynamic aspects of the software architecture, including techniques for the verification measures, pass/fail criteria for verification measures, entry and exit criteria for verification measures, and the required verification infrastructure and environment setup.",
+            "BP_key_obj": "To develop a test strategy for verifying that integrated software components work together as specified in the software architecture, focusing on their interfaces, interactions, and timing.",
+            "BP_user_docs_needed": [
+                "Software Integration Test Specification / Plan",
+                "Software Architecture Document",
+                "Integration Sequence Instruction"
+            ],
+            "BP_rating_rules": {
+                "F": [
+                    "An integration verification specification exists that is based on the software architecture and integration sequence.",
+                    "It specifies verification measures (tests) for interfaces and interactions between components.",
+                    "Clear pass/fail, entry, and exit criteria are defined for the verification measures.",
+                    "The required verification environment (e.g., SIL, HIL, debugger) is specified.",
+                    "The strategy covers both static and dynamic aspects of the architecture."
+                ],
+                "L": [
+                    "An integration verification specification exists and covers the most critical interactions and interfaces.",
+                    "Pass/fail criteria are generally clear. Some entry/exit criteria may be implicit.",
+                    "The overall strategy is sound for ensuring components work together."
+                ],
+                "P": [
+                    "The specification is incomplete, missing tests for key interfaces or interactions.",
+                    "Pass/fail criteria are frequently vague or missing.",
+                    "The specified tests do not adequately verify the software architecture."
+                ],
+                "N": [
+                    "No integration verification specification exists.",
+                    "Integration testing is performed without a plan or predefined test cases."
+                ]
+            }
+        },
+        {
+            "BP_ID": "SWE.5.BP2",
+            "BP_title": "Specify verification measures for verifying software component behavior",
+            "BP_statement": "Specify verification measures for software component verification against the defined software components\u2019 behavior and their interfaces in the software architecture, including techniques for the verification measures, entry and exit criteria for verification measures, pass/fail criteria for verification measures, and the required verification infrastructure and environment setup.",
+            "BP_key_obj": "To define a test strategy for verifying that individual software components, treated as black boxes, meet their specified behavior and interface requirements as defined in the software architecture.",
+            "BP_user_docs_needed": [
+                "Software Component Test Specification / Plan",
+                "Software Architecture Document"
+            ],
+            "BP_rating_rules": {
+                "F": [
+                    "A verification specification exists for verifying individual software components against the architecture.",
+                    "Verification measures are defined to test the component's external behavior and interfaces.",
+                    "Clear pass/fail, entry, and exit criteria are defined for these measures.",
+                    "The required verification environment is specified."
+                ],
+                "L": [
+                    "A component verification specification exists and covers the key behaviors of the components.",
+                    "Criteria are mostly clear, and the strategy is sufficient to gain confidence in the components before integration."
+                ],
+                "P": [
+                    "The specification is incomplete, with many component behaviors or interfaces not covered by tests.",
+                    "Criteria are often missing or vague.",
+                    "The specified tests are insufficient to confirm component correctness."
+                ],
+                "N": [
+                    "No component verification specification exists."
+                ]
+            }
+        },
+        {
+            "BP_ID": "SWE.5.BP3",
+            "BP_title": "Select verification measures",
+            "BP_statement": "Document the selection of integration verification measures for each integration step considering selection criteria including criteria for regression verification. The documented selection of verification measures shall have sufficient coverage according to the release scope.",
+            "BP_key_obj": "To choose and justify the specific set of integration and component tests to be executed for a release or integration step, ensuring adequate coverage and defining a regression strategy for changes.",
+            "BP_user_docs_needed": [
+                "Verification Measure Selection Set (e.g., Test Suite for a release)",
+                "Integration Test Specification / Component Test Specification",
+                "Release Plan",
+                "Change Requests / Impact Analysis for regression"
+            ],
+            "BP_rating_rules": {
+                "F": [
+                    "The selection of component and integration verification measures for the current release/integration step is documented.",
+                    "The selection provides sufficient coverage of the architecture for the release scope.",
+                    "A clear strategy and criteria for regression verification are defined and applied.",
+                    "The rationale for the selection is documented."
+                ],
+                "L": [
+                    "A selection of verification measures is performed and documented.",
+                    "Coverage is adequate for the release. The regression strategy is followed but may not be explicitly documented.",
+                    "The rationale for selection is understood by the team."
+                ],
+                "P": [
+                    "The selection of tests is not documented.",
+                    "The regression strategy is ad-hoc, leading to inefficient re-testing.",
+                    "The coverage provided by the selected tests is insufficient for the release scope or integration step."
+                ],
+                "N": [
+                    "No selection of verification measures is performed.",
+                    "It is unclear which integration tests are relevant for a given release."
+                ]
+            }
+        },
+        {
+            "BP_ID": "SWE.5.BP4",
+            "BP_title": "Integrate software elements and perform integration verification",
+            "BP_statement": "Integrate the software elements until the software is fully integrated according to the specified interfaces and interactions between the Software elements, and according to the defined sequence and defined preconditions. Perform the selected integration verification measures. Record the verification measure data including pass/fail status and corresponding verification measure data.",
+            "BP_key_obj": "To assemble the software components according to a defined plan and execute the planned integration tests at each step, recording the results to prove that the integrated parts work together correctly.",
+            "BP_user_docs_needed": [
+                "Integration Verification Results",
+                "Verification Measure Data (Test Logs)",
+                "Integration Sequence Instruction",
+                "Problem/Defect Reports",
+                "Integrated Software builds"
+            ],
+            "BP_rating_rules": {
+                "F": [
+                    "Software elements are integrated according to a defined sequence and preconditions.",
+                    "The selected integration verification measures are performed at each integration step.",
+                    "Results are recorded for all executed measures with a clear pass/fail status.",
+                    "The recorded data is sufficient to understand the test execution.",
+                    "Integration issues are documented in a defect tracking system."
+                ],
+                "L": [
+                    "Integration follows the defined sequence, and selected tests are performed.",
+                    "Results are recorded with pass/fail status, though supporting logs might occasionally lack detail.",
+                    "The overall integration status is clear and reliable."
+                ],
+                "P": [
+                    "Integration does not follow the defined sequence ('big bang' instead of incremental).",
+                    "Only some of the selected tests are performed.",
+                    "Results are not systematically recorded, or the pass/fail status is missing."
+                ],
+                "N": [
+                    "No integration is performed, or it is done without any verification.",
+                    "No integration test results are available."
+                ]
+            }
+        },
+        {
+            "BP_ID": "SWE.5.BP5",
+            "BP_title": "Perform software component verification",
+            "BP_statement": "Perform the selected verification measures for verifying software component behavior. Record the verification results including pass/fail status and corresponding verification measure data.",
+            "BP_key_obj": "To execute the planned component tests and record the results to provide evidence that each component behaves correctly before it is integrated.",
+            "BP_user_docs_needed": [
+                "Component Verification Results",
+                "Verification Measure Data (Test Logs)",
+                "Problem/Defect Reports"
+            ],
+            "BP_rating_rules": {
+                "F": [
+                    "The selected verification measures for software components have been performed.",
+                    "Results are recorded for all executed measures with a clear pass/fail status.",
+                    "The recorded data is sufficient to understand what was done and reproduce the result.",
+                    "Deviations from expected results are documented."
+                ],
+                "L": [
+                    "Verification has been performed for the vast majority of selected measures.",
+                    "Results are recorded with pass/fail status, and the overall status of the components is clear."
+                ],
+                "P": [
+                    "Component verification is only partially performed.",
+                    "Results are not systematically recorded, or the pass/fail status is often missing.",
+                    "It is difficult to determine the quality of the individual components."
+                ],
+                "N": [
+                    "No verification of software components has been performed.",
+                    "No component verification results are recorded."
+                ]
+            }
+        },
+        {
+            "BP_ID": "SWE.5.BP6",
+            "BP_title": "Ensure consistency and establish bidirectional traceability",
+            "BP_statement": "Ensure consistency and establish bidirectional traceability between verification measures and the static and dynamic aspects of the software architecture and detailed design. Establish bidirectional traceability between verification results and verification measures.",
+            "BP_key_obj": "To link integration and component tests to the architectural design they verify, and test results to the tests that were executed, ensuring architectural elements are tested and the origin of any failure is traceable.",
+            "BP_user_docs_needed": [
+                "Consistency Evidence (e.g., traceability matrix)",
+                "Software Integration/Component Test Specification",
+                "Software Architecture Document",
+                "Software Detailed Design Document",
+                "Verification Results"
+            ],
+            "BP_rating_rules": {
+                "F": [
+                    "Complete bidirectional traceability exists between verification measures and the software architecture/design.",
+                    "Complete bidirectional traceability exists between verification results and the corresponding verification measures.",
+                    "Consistency checks ensure tests are appropriate for the architecture.",
+                    "Traceability is up-to-date and allows for easy assessment of architectural test coverage."
+                ],
+                "L": [
+                    "Traceability is largely complete and consistent.",
+                    "There may be a few minor gaps or outdated links, but the relationship between architecture, tests, and results is clear.",
+                    "Architectural test coverage can be reliably assessed."
+                ],
+                "P": [
+                    "Significant gaps exist in traceability (e.g., many architectural components have no linked tests).",
+                    "Test results are not linked back to the test cases.",
+                    "It is difficult to determine the test coverage of the software architecture."
+                ],
+                "N": [
+                    "No traceability exists between architecture, tests, and results."
+                ]
+            }
+        },
+        {
+            "BP_ID": "SWE.5.BP7",
+            "BP_title": "Summarize and communicate results",
+            "BP_statement": "Summarize the software component verification and the software integration verification results and communicate them to all affected parties.",
+            "BP_key_obj": "To consolidate all component and integration test results into a clear summary report, enabling stakeholders to assess the quality and readiness of the integrated software.",
+            "BP_user_docs_needed": [
+                "Communication Evidence (e.g., summary report, email)",
+                "Integration/Component Verification Summary Report",
+                "Verification Results"
+            ],
+            "BP_rating_rules": {
+                "F": [
+                    "A summary of the component and integration verification results is created.",
+                    "The summary provides a clear overview of the status, including coverage metrics, passed/failed tests, and open defects.",
+                    "There is evidence that this summary has been communicated to all affected parties (e.g., SW qualification team, project management).",
+                    "The summary enables stakeholders to judge readiness for the next stage (e.g., software verification)."
+                ],
+                "L": [
+                    "A summary of results is created and communicated, providing a clear picture of the verification status.",
+                    "The summary may lack some formal metrics but is still effective.",
+                    "All key stakeholders are informed."
+                ],
+                "P": [
+                    "Only raw test logs are communicated without any summary.",
+                    "The summary is misleading, incomplete, or not communicated to all relevant parties.",
+                    "It is not possible to get a clear picture of the integration status."
+                ],
+                "N": [
+                    "No summary is created or communicated.",
+                    "The status of software integration is unknown to other teams."
+                ]
+            }
+        }
+    ],
+    "SWE.6":[
+		{
+            "BP_ID": "SWE.6.BP1",
+            "BP_title": "Specify verification measures for software verification",
+            "BP_statement": "Specify the verification measures for software verification suitable to provide evidence for compliance of the integrated software with the functional and non-functional information in the software requirements, including techniques for the verification measures, pass/fail criteria for verification measures, a definition of entry and exit criteria for the verification measures, necessary sequence of verification measures, and the required verification infrastructure and environment setup.",
+            "BP_key_obj": "To develop a comprehensive test plan for the fully integrated software, ensuring that every software requirement is tested and that there are objective criteria for determining success.",
+            "BP_user_docs_needed": [
+                "Software Verification/Qualification Test Specification",
+                "Software Requirements Specification (SRS)",
+                "Test environment specification"
+            ],
+            "BP_rating_rules": {
+                "F": [
+                    "A software verification specification exists that is based on the software requirements.",
+                    "It defines verification measures (test cases) for each requirement.",
+                    "Clear and unambiguous pass/fail criteria are defined for each test case.",
+                    "Entry/exit criteria for the overall verification campaign are defined.",
+                    "The required verification infrastructure (e.g., HIL, test vehicle) and any necessary test sequence are specified."
+                ],
+                "L": [
+                    "A verification specification exists and covers the vast majority of software requirements.",
+                    "Pass/fail criteria are generally clear. Some entry/exit criteria may be implicit rather than formally documented.",
+                    "The overall strategy is sound for validating the software against its requirements."
+                ],
+                "P": [
+                    "The specification is incomplete, missing tests for significant functional or non-functional requirements.",
+                    "Pass/fail criteria are frequently vague, subjective, or missing.",
+                    "The specified tests are insufficient to provide confidence that the software meets its requirements."
+                ],
+                "N": [
+                    "No software verification specification exists.",
+                    "Testing is performed without a plan or predefined test cases based on requirements."
+                ]
+            }
+        },
+        {
+            "BP_ID": "SWE.6.BP2",
+            "BP_title": "Select verification measures",
+            "BP_statement": "Document the selection of verification measures considering selection criteria including criteria for regression verification. The documented selection of verification measures shall have sufficient coverage according to the release scope.",
+            "BP_key_obj": "To choose and justify the specific set of software tests to be executed for a given software release, ensuring that all requirements in scope are covered and that a defined regression strategy is in place.",
+            "BP_user_docs_needed": [
+                "Verification Measure Selection Set (e.g., Release Test Plan)",
+                "Software Verification Test Specification",
+                "Release Plan",
+                "Software Requirements Specification"
+            ],
+            "BP_rating_rules": {
+                "F": [
+                    "The selection of verification measures for the current release is documented.",
+                    "The selection provides sufficient coverage of the in-scope software requirements.",
+                    "A clear strategy and criteria for regression testing are defined and applied based on changes to requirements.",
+                    "The rationale for the selection is documented."
+                ],
+                "L": [
+                    "A selection of verification measures is performed and documented.",
+                    "Coverage of requirements is adequate for the release. The regression strategy is sound but may not be explicitly documented in detail.",
+                    "The test scope is understood by the team."
+                ],
+                "P": [
+                    "The selection of tests is not documented.",
+                    "The regression strategy is ad-hoc.",
+                    "The coverage of requirements is insufficient for the release, with known gaps."
+                ],
+                "N": [
+                    "No selection of verification measures is performed.",
+                    "It is unclear which requirements are tested for any given release."
+                ]
+            }
+        },
+        {
+            "BP_ID": "SWE.6.BP3",
+            "BP_title": "Verify the integrated software",
+            "BP_statement": "Perform the verification of the integrated software using the selected verification measures. Record the verification results including pass/fail status and corresponding verification measure data.",
+            "BP_key_obj": "To execute the planned software verification tests on the fully integrated software and to systematically capture the results to provide objective evidence of compliance with software requirements.",
+            "BP_user_docs_needed": [
+                "Software Verification Results / Test Report",
+                "Verification Measure Data (Test Logs, screenshots, etc.)",
+                "Problem/Defect Reports"
+            ],
+            "BP_rating_rules": {
+                "F": [
+                    "The selected verification measures have been performed on the integrated software.",
+                    "Results are recorded for all executed tests.",
+                    "Each result includes a clear pass/fail status.",
+                    "The recorded data is sufficient to understand what was tested and reproduce the result.",
+                    "Failures are documented in a defect tracking system, linked to the failed test."
+                ],
+                "L": [
+                    "Verification has been performed for the vast majority of selected measures.",
+                    "Results are recorded with pass/fail status, but the supporting data might occasionally lack some detail.",
+                    "The overall compliance of the software with its requirements is clear."
+                ],
+                "P": [
+                    "Verification is only partially performed.",
+                    "Results are not systematically recorded, or the pass/fail status is often missing.",
+                    "It is difficult to determine whether the software meets its requirements based on the available records."
+                ],
+                "N": [
+                    "No verification of the integrated software has been performed.",
+                    "No verification results are recorded."
+                ]
+            }
+        },
+        {
+            "BP_ID": "SWE.6.BP4",
+            "BP_title": "Ensure consistency and establish bidirectional traceability",
+            "BP_statement": "Ensure consistency and establish bidirectional traceability between verification measures and software requirements. Establish bidirectional traceability between verification results and verification measures.",
+            "BP_key_obj": "To link software tests to the requirements they verify, and test results to the tests that were executed, ensuring all requirements are tested and the status of each requirement's verification is known.",
+            "BP_user_docs_needed": [
+                "Consistency Evidence (e.g., traceability matrix, requirements coverage report)",
+                "Software Verification Test Specification",
+                "Software Requirements Specification",
+                "Software Verification Results"
+            ],
+            "BP_rating_rules": {
+                "F": [
+                    "Complete bidirectional traceability exists between verification measures (test cases) and software requirements.",
+                    "Complete bidirectional traceability exists between verification results and the corresponding verification measures.",
+                    "The traceability is used to generate requirement coverage reports.",
+                    "The traceability is up-to-date, and consistency checks ensure tests are appropriate for the requirements."
+                ],
+                "L": [
+                    "Traceability is largely complete and consistent.",
+                    "There may be a few minor gaps or outdated links for non-critical requirements, but the relationship between requirements, tests, and results is clear.",
+                    "Requirement test coverage can be reliably assessed."
+                ],
+                "P": [
+                    "Significant gaps exist in traceability; many requirements have no linked test cases.",
+                    "Test results are not linked back to the test cases or requirements.",
+                    "It is difficult to determine the test coverage of the software requirements."
+                ],
+                "N": [
+                    "No traceability exists between requirements, tests, and results."
+                ]
+            }
+        },
+        {
+            "BP_ID": "SWE.6.BP5",
+            "BP_title": "Summarize and communicate results",
+            "BP_statement": "Summarize the software verification results and communicate them to all affected parties.",
+            "BP_key_obj": "To consolidate the detailed test results into a final software qualification report that enables a formal release decision by stakeholders (e.g., system integration, project management, customer).",
+            "BP_user_docs_needed": [
+                "Communication Evidence (e.g., release notice with summary attached)",
+                "Software Verification Summary Report / Qualification Report",
+                "Verification Results"
+            ],
+            "BP_rating_rules": {
+                "F": [
+                    "A summary of the software verification results (e.g., a Qualification Report) is created.",
+                    "The summary provides a clear overview of the status, including requirements coverage, passed/failed tests, open defects, and any deviations.",
+                    "The summary provides a recommendation on the software's readiness for release.",
+                    "There is evidence that this summary has been communicated to all affected parties for approval."
+                ],
+                "L": [
+                    "A summary of results is created and communicated, providing a clear picture of the software's status against requirements.",
+                    "The summary may lack a formal recommendation but contains all the necessary data for a release decision.",
+                    "All key stakeholders are informed."
+                ],
+                "P": [
+                    "Only raw test logs are communicated without a summary.",
+                    "The summary is misleading, incomplete, or fails to report on the status of all requirements.",
+                    "It is not possible to make an informed release decision based on the information provided."
+                ],
+                "N": [
+                    "No summary is created or communicated.",
+                    "The final status of the software is unknown to project stakeholders."
+                ]
+            }
+        }
+    ],
+	"CapabilityLevel": {
         "1": {
             "PA_name": "Performed process",
             "PA_ID": "PA 1.1",
